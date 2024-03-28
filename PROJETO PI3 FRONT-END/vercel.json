@@ -2,8 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "FertWeb/PROJETO PI3 FRONT-END/server.js",
-      "use": "@vercel/node"
+      "src": "FertWeb/PROJETO PI3 FRONT-END",
+      "use": "@vercel/static"
     }
   ]
 }
