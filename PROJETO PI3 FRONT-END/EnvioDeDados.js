@@ -17,9 +17,12 @@ function enviarMensagem() {
             console.error('Erro ao enviar mensagem:', err);
         } else {
             console.log('Mensagem enviada com sucesso:', mensagem);
+            exibirConfirmacao('Mensagem enviada com sucesso!');
         }
     });
 }
 
-// Função chamada quando o botão de enviar é clicado
-document.getElementById('botaoEnviar').addEventListener('click', enviarMensagem);
+function exibirConfirmacao(mensagem) {
+    const confirmacaoElement = document.getElementById('confirmacao');
+    confirmacaoElement.textContent = mensagem;
+}
