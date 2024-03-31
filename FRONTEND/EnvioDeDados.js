@@ -4,7 +4,7 @@ const client = mqtt.connect('wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq
     password: '12345678'
 });
 
-const topic = 'Raspberry/Api';
+const topic = 'Api/Raspberry';
 
 client.on('connect', function () {
     console.log('Conectado ao broker MQTT');
