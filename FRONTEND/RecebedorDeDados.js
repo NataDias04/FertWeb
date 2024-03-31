@@ -4,7 +4,7 @@ const client = mqtt.connect('wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq
     password: '12345678'
 });
 
-const topic = '"Raspberry/Api"';
+const topic = 'Raspberry/Api';
 
 client.on('connect', function () {
     console.log('Conectado ao broker MQTT');
@@ -18,8 +18,8 @@ client.on('connect', function () {
     });
 });
 
-client.on('message', function (topic, message) {
-    console.log('Mensagem recebida no tópico', topic, ':', message.toString());
+client.on('message', function (receivedTopic, message) {
+    console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
 
     exibirMensagemNaPagina(message.toString());
 });
@@ -29,13 +29,5 @@ function exibirMensagemNaPagina(mensagem) {
     const novaMensagem = document.createElement('li');
     novaMensagem.textContent = mensagem;
     listaMensagens.appendChild(novaMensagem);
-
-        let messageCounter = listaMensagens.getElementsByTagName('li').length;
-
-    if (messageCounter >= 5) {
-        // Limpar as mensagens após aparecerem 5 vezes
-        while (listaMensagens.firstChild) {
-            listaMensagens.removeChild(listaMensagens.firstChild);
-        }
-    }
 }
+
