@@ -24,6 +24,7 @@ function enviarMensagem() {
     client.publish(topic, mensagem, function (err) {
         if (err) {
             console.error('Erro ao enviar mensagem:', err);
+            exibirErro('Erro ao enviar mensagem: ' + err);
         } else {
             console.log('Mensagem enviada com sucesso:', mensagem);
             exibirConfirmacao('Mensagem enviada com sucesso!');
