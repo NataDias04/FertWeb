@@ -5,6 +5,7 @@ const client = mqtt.connect('wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq
 });
 
 const topic = 'Raspberry/Api';
+let ultimaMensagem = '';
 
 client.on('connect', function () {
     console.log('Conectado ao broker MQTT');
@@ -21,13 +22,19 @@ client.on('connect', function () {
 client.on('message', function (receivedTopic, message) {
     console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
 
-    exibirMensagemNaPagina(message.toString());
+    ultimaMensagem = message.toString();
+    exibirUltimaMensagemNaPagina();
 });
 
-function exibirMensagemNaPagina(mensagem) {
+function exibirUltimaMensagemNaPagina() {
     const listaMensagens = document.getElementById('mensagens');
+    
+    // Limpar mensagens antigas
+    listaMensagens.innerHTML = '';
+
+    // Criar novo item de lista com a última mensagem
     const novaMensagem = document.createElement('li');
-    novaMensagem.textContent = mensagem;
+    novaMensagem.textContent = ultimaMensagem;
     listaMensagens.appendChild(novaMensagem);
 }
 
