@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Fert Web</title>
-
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
-    
 </head>
 <body>
+    <header>
+        <h1>Fert Web - Sistema de Fertirrigação</h1>
+    </header>
     
-    <h1>Mensagem recebida da raspberry atraves do broker HiveMq:</h1>
+    <main>
+        <section class="mensagem-section">
+            <h2>Mensagem recebida da Raspberry Pi</h2>
+            <ul id="mensagens"></ul>
+        </section>
 
-    <ul id="mensagens"></ul>
+        <section class="envio-section">
+            <h2>Enviar Mensagem para a Raspberry Pi</h2>
+            <button id="botaoEnviar">Enviar Mensagem</button>
+            <p id="confirmacao"></p>
+            <p id="erro"></p>
+        </section>
+    </main>
 
-    <script type="module" src="https://fert-web.vercel.app/RecebedorDeDados.js"></script>
-    
-    <h1>Enviar Mensagem para a Raspberry Pi</h1>
+    <footer>
+        <p>&copy; 2024 Fert Web - Todos os direitos reservados.</p>
+    </footer>
 
-    <script type="module" src="https://fert-web.vercel.app/EnvioDeDados.js"></script>
-
-    <button id="botaoEnviar">Enviar Mensagem</button>
-
-    <!-- não foi realizado o metodo enviar mensagem quando clica no botão não tem nenhuma referencia ou link desse metodo na construção do button -->
-
-    <p id="confirmacao"></p>
-    <p id="erro"></p>
+    <script type="module" src="RecebedorDeDados.js"></script>
+    <script type="module" src="EnvioDeDados.js"></script>
 </body>
 </html>
+
