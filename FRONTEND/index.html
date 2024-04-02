@@ -3,35 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fert Web</title>
+    <title>Fert Web - Sistema de Fertirrigação</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>Fert Web - Sistema de Fertirrigação</h1>
+        <div class="container">
+            <h1>Fert Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
         <section class="mensagem-section">
-            <h2>Mensagem recebida da Raspberry Pi</h2>
-            <ul id="mensagens"></ul>
+            <div class="container">
+                <h2>Mensagem recebida da Raspberry Pi</h2>
+                <ul id="mensagens"></ul>
+            </div>
         </section>
 
         <section class="envio-section">
-            <h2>Enviar Mensagem para a Raspberry Pi</h2>
-            <button id="botaoEnviar">Enviar Mensagem</button>
-            <p id="confirmacao"></p>
-            <p id="erro"></p>
+            <div class="container">
+                <h2>Enviar Mensagem para a Raspberry Pi</h2>
+                <button id="botaoEnviar">Enviar Mensagem</button>
+                <p id="confirmacao"></p>
+                <p id="erro"></p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Fert Web - Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Fert Web - Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script type="module" src="RecebedorDeDados.js"></script>
     <script type="module" src="EnvioDeDados.js"></script>
 </body>
 </html>
+
 
