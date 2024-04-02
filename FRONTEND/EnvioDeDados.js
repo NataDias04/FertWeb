@@ -32,6 +32,11 @@ function enviarMensagem() {
     });
 }
 
+document.getElementById("botaoEnviar").addEventListener("click", function() {
+    // Aqui você chama a função para enviar a mensagem para a Raspberry Pi
+    enviarMensagem();
+});
+
 function exibirConfirmacao(mensagem) {
     const confirmacaoElement = document.getElementById('confirmacao');
     confirmacaoElement.textContent = mensagem;
