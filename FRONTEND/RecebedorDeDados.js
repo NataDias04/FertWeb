@@ -10,13 +10,16 @@ let ultimaMensagem = '';
 client.on('connect', function () {
     console.log('Conectado ao broker MQTT');
 
-    client.subscribe(topic, function (err) {
-        if (err) {
-            console.error('Erro ao se inscrever no tópico', err);
-        } else {
-            console.log('Inscrição no tópico bem-sucedida');
-        }
-    });
+    // Verificar se já está inscrito no tópico
+    if (!client.connected) {
+        client.subscribe(topic, function (err) {
+            if (err) {
+                console.error('Erro ao se inscrever no tópico', err);
+            } else {
+                console.log('Inscrição no tópico bem-sucedida');
+            }
+        });
+    }
 });
 
 client.on('message', function (receivedTopic, message) {
@@ -37,4 +40,3 @@ function exibirUltimaMensagemNaPagina() {
     novaMensagem.textContent = ultimaMensagem;
     listaMensagens.appendChild(novaMensagem);
 }
-
