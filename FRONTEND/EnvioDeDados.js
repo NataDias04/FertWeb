@@ -14,7 +14,6 @@ client.on('connect', function () {
             console.error('Erro ao se inscrever no tópico', err);
         } else {
             console.log('Inscrição no tópico bem-sucedida');
-            exibirConfirmacao('Inscrição no tópico bem-sucedida');
         }
     });
 });
