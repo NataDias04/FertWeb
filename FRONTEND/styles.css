@@ -1,8 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f2f6f6; /* Tom de verde claro */
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -11,37 +19,44 @@ body {
     padding: 0 20px;
 }
 
-header {
-    background-color: #1a936f; /* Verde escuro */
+/* Header */
+.header {
+    background-color: #1a936f;
     color: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.logo {
+    font-size: 2.5rem;
 }
 
-nav ul {
+.nav-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    margin-top: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-nav ul li a {
-    color: #fff;
+.nav-link {
     text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-main {
+.nav-link:hover {
+    color: #d4f5e3;
+}
+
+/* Main */
+.main {
     padding: 50px 0;
 }
 
-section {
+.section {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
@@ -49,27 +64,37 @@ section {
     padding: 30px;
 }
 
-h2 {
-    color: #1a936f; /* Verde escuro */
+.section-title {
+    color: #1a936f;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-button {
-    background-color: #1a936f; /* Verde escuro */
+/* Button */
+.button {
+    background-color: #1a936f;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #156d55; /* Tom mais escuro do verde */
+.button:hover {
+    background-color: #156d55;
 }
 
-footer {
-    background-color: #1a936f; /* Verde escuro */
+/* Footer */
+.footer {
+    background-color: #1a936f;
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+.footer-text {
+    font-size: 0.9rem;
 }
 
