@@ -88,11 +88,15 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #1a936f;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    padding: 20px 0; /* Adicione preenchimento superior e inferior */
+    width: 100%; /* Garanta que o rodapé ocupe toda a largura */
+    position: fixed; /* Fixe o rodapé no final da página */
+    bottom: 0; /* Alinhe o rodapé ao final da página */
+    left: 0; /* Alinhe o rodapé à esquerda */
 }
+
 
 .footer-text {
     font-size: 0.9rem;
