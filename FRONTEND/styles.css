@@ -74,5 +74,92 @@ body{
 }
 
 
+@media (max-width: 576px) {
+    .dashboard-sensor {
+        width: 300px;
+    }
+
+    .message-list {
+        margin-left: 20px;
+    }
+
+    .dashboard-comando {
+        width: 250px;
+    }
+
+    .dashboard-comando h1 {
+        margin-left: 20px;
+    }
+
+    .button {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-sensor {
+        width: 250px;
+    }
+
+    .message-list {
+        margin-left: 10px;
+    }
+
+    .dashboard-comando {
+        width: 200px;
+    }
+
+    .dashboard-comando h1 {
+        margin-left: 10px;
+    }
+
+    .button {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .dashboard-sensor {
+        width: 200px;
+    }
+
+    .message-list {
+        margin-left: 5px;
+    }
+
+    .dashboard-comando {
+        width: 150px;
+    }
+
+    .dashboard-comando h1 {
+        margin-left: 5px;
+    }
+
+    .button {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .dashboard-sensor {
+        width: 150px;
+    }
+
+    .message-list {
+        margin-left: 5px;
+    }
+
+    .dashboard-comando {
+        width: 120px;
+    }
+
+    .dashboard-comando h1 {
+        margin-left: 5px;
+    }
+
+    .button {
+        margin-left: 5px;
+    }
+}
 
 
