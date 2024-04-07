@@ -1,3 +1,4 @@
+// Dados do gráfico (apenas como exemplo)
 const data = {
     labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
     datasets: [{
@@ -18,12 +19,15 @@ const options = {
     }
 };
 
-// Contexto do canvas
-const ctx = document.getElementById('meuGrafico').getContext('2d');
+document.addEventListener('DOMContentLoaded', function() {
+    // Contexto do canvas
+    const ctx = document.getElementById('meuGrafico').getContext('2d');
 
-// Inicializando o gráfico
-const myChart = new Chart(ctx, {
-    type: 'bar', // Tipo de gráfico (bar, line, pie, etc.)
-    data: data,
-    options: options
+    // Inicializando o gráfico
+    const myChart = new Chart(ctx, {
+        type: 'bar', // Tipo de gráfico (bar, line, pie, etc.)
+        data: data,
+        options: options
+    });
 });
+
