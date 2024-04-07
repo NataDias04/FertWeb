@@ -1,56 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fert Web - Sistema de Fertirrigação</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">Fert Web</h1>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <main class="main">
-        <section class="section mensagem-section">
-            <div class="container">
-                <h2 class="section-title">Mensagem recebida da Raspberry Pi</h2>
-                <ul class="message-list" id="mensagens"></ul>
-            </div>
-        </section>
-
-        <section class="section envio-section">
-            <div class="container">
-                <h2 class="section-title">Enviar Mensagem para a Raspberry Pi</h2>
-                <button class="button" id="botaoEnviar">Enviar Mensagem</button>
-                <p class="confirmation" id="confirmacao"></p>
-                <p class="error" id="erro"></p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">&copy; 2024 Fert Web - Todos os direitos reservados.</p> 
-        </div>
-    </footer>
-
-    <script type="module" src="RecebedorDeDados.js"></script>
-    <script type="module" src="EnvioDeDados.js"></script>
-</body>
-</html>
-
-<!--<!DOCTYPE html>
 <html lang="pt-br" data-bs-theme="tertiary">
 <head>
     <meta charset="UTF-8">
@@ -81,12 +29,7 @@
     
     <div class="container-fluid dashboard">
         <div class="dashboard-sensor">
-            <section class="section mensagem-section">
-            <div class="container">
-                <h2 class="section-title">Mensagem recebida da Raspberry Pi</h2>
                 <ul class="message-list" id="mensagens"></ul>
-            </div>
-        </section>
         </div>
         <div class="dashboard-comando">
             <h1>teste 2</h1>
@@ -98,4 +41,4 @@
     <script type="module" src="EnvioDeDados.js"></script>
 </body>
 
-</html> -->
+</html>
