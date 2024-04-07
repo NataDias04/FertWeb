@@ -45,8 +45,8 @@ body{
 }
 
 .grafico-container {
-    width: 400px; /* Defina a largura desejada */
-    height: 300px; /* Defina a altura desejada */
+    width: 80%;
+    height: 200px;
 }
 
 .dashboard-comando{
