@@ -36,7 +36,7 @@ document.getElementById("botao-enviar").addEventListener("click", function() {
     enviarMensagem();
 });
 
-function exibirConfirmacao(mensagem) {
+/*function exibirConfirmacao(mensagem) {
     const confirmacaoElement = document.getElementById('confirmacao');
     confirmacaoElement.textContent = mensagem;
 }
@@ -45,4 +45,4 @@ function exibirErro(erro) {
     const erroElement = document.getElementById('erro');
     erroElement.textContent = erro;
     erroElement.style.color = 'red'; // Define a cor do texto para vermelho para indicar erro
-}
+}*/
