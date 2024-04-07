@@ -1,33 +1,40 @@
-// Dados do gráfico (apenas como exemplo)
-const data = {
-    labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
-    datasets: [{
-        label: 'Vendas',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: 'cornflowerblue',
-        borderColor: 'cornflowerblue',
-        borderWidth: 1
-    }]
-};
-
-// Opções do gráfico (opcional)
-const options = {
-    scales: {
-        y: {
-            beginAtZero: true
-        }
-    }
-};
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Contexto do canvas
-    const ctx = document.getElementById('meuGrafico').getContext('2d');
+    const canvas = document.getElementById('meuGrafico');
+    
+    // Verificar se o elemento canvas foi encontrado
+    if (canvas) {
+        // Contexto do canvas
+        const ctx = canvas.getContext('2d');
 
-    // Inicializando o gráfico
-    const myChart = new Chart(ctx, {
-        type: 'bar', // Tipo de gráfico (bar, line, pie, etc.)
-        data: data,
-        options: options
-    });
+        // Dados do gráfico (apenas como exemplo)
+        const data = {
+            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+            datasets: [{
+                label: 'Vendas',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: 'cornflowerblue',
+                borderColor: 'cornflowerblue',
+                borderWidth: 1
+            }]
+        };
+
+        // Opções do gráfico (opcional)
+        const options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Inicializando o gráfico
+        const myChart = new Chart(ctx, {
+            type: 'bar', // Tipo de gráfico (bar, line, pie, etc.)
+            data: data,
+            options: options
+        });
+    } else {
+        console.error('Elemento canvas não encontrado.');
+    }
 });
 
