@@ -53,15 +53,20 @@ body{
     border-radius: 10px;
 }
 
+.dashboard-comando h1 {
+    margin-left: 155px;
+}
+
 .button{
     background-color: cornflowerblue;
     color: white;
     border: none;
     align-items: center;
+    margin-left: 155px;
+    margin-top: 20px;
     border-radius: 50px;
     padding: 5px 10px;
 }
-
 
 
 
