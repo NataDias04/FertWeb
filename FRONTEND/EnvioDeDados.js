@@ -31,7 +31,7 @@ function enviarMensagem() {
     });
 }
 
-document.getElementById("botaoEnviar").addEventListener("click", function() {
+document.getElementById("botao-enviar").addEventListener("click", function() {
     // Aqui você chama a função para enviar a mensagem para a Raspberry Pi
     enviarMensagem();
 });
