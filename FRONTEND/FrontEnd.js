@@ -1,41 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const canvas = document.getElementById('meuGrafico');
+function initGraficos() {
+    // Dados do gráfico
+    var data1 = [{
+        x: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+        y: [12, 19, 3, 5, 2, 3],
+        type: 'bar'
+    }];
     
-    // Verificar se o elemento canvas foi encontrado
-    if (canvas) {
-        // Contexto do canvas
-        const ctx = canvas.getContext('2d');
+    var data2 = [{
+        x: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
+        y: [5, 10, 8, 15, 7, 9],
+        type: 'line'
+    }];
 
-        // Dados do gráfico (apenas como exemplo)
-        const data = {
-            labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
-            datasets: [{
-                label: 'Vendas',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: 'cornflowerblue',
-                borderColor: 'cornflowerblue',
-                borderWidth: 1
-            }]
-        };
+    // Layout do gráfico
+    var layout = {
+        xaxis: {title: 'Mês'},
+        yaxis: {title: 'Vendas'}
+    };
 
-        // Opções do gráfico (opcional)
-        const options = {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        };
+    // Renderizar os gráficos
+    Plotly.newPlot('meuGrafico1', data1, layout);
+    Plotly.newPlot('meuGrafico2', data2, layout);
+}
 
-        // Inicializando o gráfico
-        const myChart = new Chart(ctx, {
-            type: 'bar', // Tipo de gráfico (bar, line, pie, etc.)
-            data: data,
-            options: options
-        });
-    } else {
-        console.error('Elemento canvas não encontrado.');
-    }
+// Inicializar os gráficos quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', function() {
+    initGraficos();
 });
-
-
