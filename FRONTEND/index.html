@@ -28,24 +28,28 @@
         </div>
     </header>
     
-    <div class="container-fluid dashboard">
-        <div class="dashboard-sensor">
-                <ul class="message-list" id="mensagens"></ul>
-                <div id="graficoTemperatura" class="grafico-container"></div>
-                <div id="graficoUmidadeSolo" class="grafico-container"></div>
+    <div class="container-fluid dashboard-temperatura-do-solo">
+        <div class="logo-temperatura-do-solo">
+            <i class="fa-solid fa-temperature-half"></i>
+            <h1>Temp. do solo:</h1>
         </div>
-        <div class="dashboard-comando">
-            <h1>teste 2</h1>
-            <button class="button" id="botao-enviar">enviar comando</button>
-            <div id="confirmacao"></div>
+
+        <div class="dado-recebido">
+            <ul class="message-list" id="mensagens"></ul>
+        </div>
+
+        <div id="graficoTemperaturaSolo" class="grafico-temperatura-do-solo">
         </div>
     </div>
+
+    <div class="container-fluid dashboard-envio-de-comando"></div>
+
 
     <script type="module" src="RecebedorDeDados.js"></script>
     <script type="module" src="EnvioDeDados.js"></script>
 
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script type="module" src="FrontEnd.js"></script>
+    <script type="module" src="Graficos.js"></script>
 </body>
 
 </html>
