@@ -74,5 +74,21 @@ body{
     margin-top: -215px;
 }
 
+@media screen and (max-width: 768px) {
+    .dashboard-temperatura-do-solo {
+        display: flex;
+        flex-direction: column; /* Altera a direção para coluna em telas menores */
+    }
+
+    .logo-temperatura-do-solo,
+    .grafico-temperatura-do-solo {
+        margin-right: 0; /* Remove a margem direita nos itens */
+    }
+
+    .grafico-temperatura-do-solo {
+        margin-top: 20px; /* Adiciona margem superior para separar do elemento anterior */
+    }
+}
+
 
 
