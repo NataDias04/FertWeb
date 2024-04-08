@@ -13,7 +13,8 @@ function initGraficoTemperaturaSolo() {
         yaxis: {title: 'Temperatura (°C)'},
         title: 'Controle de Temperatura do Solo',
         width: 1000, // Define a largura do gráfico em pixels
-        height: 300
+        height: 300,
+        border-radius: 20
     };
 
     // Renderizar o gráfico de temperatura do solo
