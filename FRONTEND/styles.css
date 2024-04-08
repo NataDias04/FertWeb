@@ -30,73 +30,43 @@ body{
     margin: 0 auto;
 }
 
-.dashboard{
-    display: flex;
-    padding: 20px;
-}
-
-.dashboard-sensor{
+.dashboard-temperatura-do-solo{
     background-color: white;
-    width: 1000px;
-    height: 550px;
-    margin-left: 10px;
-    border-radius: 10px;
-
-}
-
-.grafico-container {
-    width: 80%;
-    height: 300px;
-}
-
-.dashboard-comando{
-    background-color: white;
-    width: 450px;
-    height: 500px;
-    margin-left: auto;
-    margin-right: 10px;
-    border-radius: 10px;
-}
-
-.dashboard-comando h1 {
-    margin-left: 155px;
-}
-
-.button{
-    background-color: cornflowerblue;
-    color: white;
-    border: none;
-    align-items: center;
-    margin-left: 155px;
     margin-top: 20px;
-    border-radius: 50px;
-    padding: 5px 10px;
+
+    width: 95%;
+    
+    padding:200px 2%;
+    border-radius: 20px;
 }
 
+.dashboard-envio-de-comando{
+    background-color: white;
+    margin-top: 20px;
 
-@media (max-width: 768px) {
-    .dashboard {
-        flex-direction: column;
-    }
-
-    .dashboard-sensor,
-    .dashboard-comando {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .dashboard-comando h1,
-    .button {
-        margin-left: 0;
-    }
+    width: 95%;
+    
+    padding:200px 2%;
+    border-radius: 20px;
 }
 
-@media (max-width: 576px) {
-    .dashboard-sensor,
-    .dashboard-comando {
-        width: 100%;
-        margin: 10px 0;
-    }
+.logo-temperatura-do-solo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px; 
+}
+
+.logo-temperatura-do-solo i {
+    margin-right: 10px;
+    margin-top: -300px;
+    font-size: 32px;
+    color: crimson;
+
+}
+
+.logo-temperatura-do-solo h1 {
+    margin-left: 10px;
+    margin-top: -300px;
 }
 
 
