@@ -78,6 +78,7 @@ body{
 
 .logo-envio-de-comando{
     display:flex;
+    align-items: center;
 }
 
 #mensagens {
