@@ -81,6 +81,16 @@ body{
     align-items: center;
 }
 
+.logo-envio-de-comando i{
+    margin-right: 10px;
+    font-size: 32px;
+}
+
+.logo-envio-de-comando h1{
+    margin-left: 10px;
+    font-size: 32px;
+}
+
 #mensagens {
     list-style-type: none;
     align-items: center;
