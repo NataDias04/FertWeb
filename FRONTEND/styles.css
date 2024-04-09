@@ -96,7 +96,7 @@ body{
 .logo-temperatura-do-solo{
     display: flex;
     align-items: center;
-    margin-left: auto; 
+    margin-left: 20px; 
 }
 
 #graficoTemperaturaSolo{
