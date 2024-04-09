@@ -48,6 +48,8 @@ body{
     
     padding:200px 2%;
     border-radius: 20px;
+
+    justify-content: center;
 }
 
 .logo-temperatura-do-solo{
