@@ -97,10 +97,12 @@ body{
 .logo-envio-de-comando i{
     margin-right: 10px;
     font-size: 32px;
+    margin-top: -300px;
 }
 
 .logo-envio-de-comando h1{
     margin-left: 10px;
+    margin-top: -300px;
 }
 .botao-enviar {
     background-color: cornflowerblue;
