@@ -80,6 +80,7 @@ body{
 
 #mensagens {
     list-style-type: none;
+    align-items: center;
 }
 
 #mensagens li {
