@@ -72,6 +72,7 @@ body{
 .grafico-temperatura-do-solo{
     margin-left: 410px;
     margin-top: -215px;
+    padding: 0px;
 }
 
 #mensagens {
