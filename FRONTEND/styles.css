@@ -74,7 +74,8 @@ body{
     margin-top: -215px;
 }
 
-.logo-enviar-comando{
+.logo-envio-de-comando{
+    display:flex;
 }
 
 #mensagens {
