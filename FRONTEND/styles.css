@@ -103,6 +103,11 @@ body{
     margin-left: 10px;
 }
 
+.botao-enviar{
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
 .logo-temperatura-do-solo{
     display: flex;
