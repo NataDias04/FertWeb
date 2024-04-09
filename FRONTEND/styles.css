@@ -76,6 +76,18 @@ body{
     margin-top: -215px;
 }
 
+#mensagens {
+    list-style-type: none;
+    align-items: center;
+}
+
+#mensagens li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 100px;
+    margin-left: 90px;
+}
+
 .logo-envio-de-comando{
     display:flex;
     align-items: center;
@@ -89,18 +101,6 @@ body{
 
 .logo-envio-de-comando h1{
     margin-left: 10px;
-}
-
-#mensagens {
-    list-style-type: none;
-    align-items: center;
-}
-
-#mensagens li {
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    font-size: 100px;
-    margin-left: 90px;
 }
 
 @media screen and (max-width: 768px) {
