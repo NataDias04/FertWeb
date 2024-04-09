@@ -79,6 +79,7 @@ body{
 .logo-envio-de-comando{
     display:flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo-envio-de-comando i{
