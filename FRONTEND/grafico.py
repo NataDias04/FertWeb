@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import requests
 
+# Defina o token de acesso como uma variável de ambiente
+MEU_TOKEN = 'MEU_TOKEN'
+
 # Dados de exemplo - Temperatura do solo ao longo do tempo
 tempo = 18 #np.arange(0, 24, 1)  # Horas do dia
 temperatura =  8 #np.random.randint(15, 25, size=len(tempo))  # Temperatura aleatória entre 15°C e 25°C
@@ -29,7 +32,10 @@ file_path = 'FRONTEND/grafico_temperatura_solo.png'
 commit_message = 'Atualizando gráfico de temperatura do solo'
 
 # Obter o token de acesso pessoal da variável de ambiente
-token = os.environ.get('MEU_TOKEN')
+token = os.environ.get(MEU_TOKEN)
+
+# Verifique se o token de acesso está sendo carregado corretamente
+print(token)
 
 # URL para obter informações sobre o arquivo
 github_url = f'https://api.github.com/repos/{github_repo}/contents/{file_path}'
