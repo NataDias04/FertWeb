@@ -29,7 +29,7 @@ file_path = 'FRONTEND/grafico_temperatura_solo.png'
 commit_message = 'Atualizando gráfico de temperatura do solo'
 
 # Obter o token de acesso pessoal da variável de ambiente
-token = os.environ.get('GITHUB_TOKEN')
+token = os.environ.get('MEU_TOKEN')
 
 # URL para obter informações sobre o arquivo
 github_url = f'https://api.github.com/repos/{github_repo}/contents/{file_path}'
