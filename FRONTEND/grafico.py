@@ -7,8 +7,8 @@ import requests
 token = os.environ.get('GITHUB_TOKEN')
 
 # Dados de exemplo - Temperatura do solo ao longo do tempo
-tempo = 10 #np.arange(0, 24, 1)  # Horas do dia
-temperatura =  5 #np.random.randint(15, 25, size=len(tempo))  # Temperatura aleatória entre 15°C e 25°C
+tempo = 18 #np.arange(0, 24, 1)  # Horas do dia
+temperatura =  8 #np.random.randint(15, 25, size=len(tempo))  # Temperatura aleatória entre 15°C e 25°C
 
 # Criando o gráfico
 plt.figure(figsize=(10.9, 2.50))  # Define o tamanho do gráfico conforme solicitado
