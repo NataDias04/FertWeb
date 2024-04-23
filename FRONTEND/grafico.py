@@ -25,7 +25,10 @@ github_repo = 'NataDias04/FertWeb'
 file_path = 'FRONTEND/grafico_temperatura_solo.png'
 github_url = f'https://api.github.com/repos/{github_repo}/contents/{file_path}'
 
-with open(file_path, 'rb') as file:
+# Substitua 'SEU_TOKEN_AQUI' pelo seu token de acesso pessoal
+token = 'SEU_TOKEN_AQUI'
+
+with open('grafico_temperatura_solo.png', 'rb') as file:
     file_content = file.read()
 
 data = {
@@ -33,7 +36,11 @@ data = {
     'content': file_content
 }
 
-response = requests.put(github_url, json=data)
+headers = {
+    'Authorization': f'token {token}'
+}
+
+response = requests.put(github_url, json=data, headers=headers)
 
 if response.status_code == 200:
     print('Gráfico de temperatura do solo foi atualizado no repositório.')
