@@ -18,7 +18,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install matplotlib
+        run: pip install -r FRONTEND/requirements.txt
 
       - name: Run Python script
         run: python FRONTEND/grafico.py
