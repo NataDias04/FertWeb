@@ -1,23 +1,23 @@
-name: Atualizar Gráfico
+name: Update Graph
 
 on:
   push:
     branches:
       - main
+
 jobs:
   update-graph:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout do Código
-      uses: actions/checkout@v2
-      
-    - name: Executar Script
-      run: python update_graph.py
-      
-    - name: Commit e Push Alterações
-      uses: EndBug/add-and-commit@v7
-      with:
-        author_name: Seu Nome
-        author_email: seu@email.com
-        message: Atualizando gráfico de temperatura do solo
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Especifique a versão do Python que seu script requer
+
+      - name: Run Python script
+        run: python path/to/your/script.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
