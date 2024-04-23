@@ -52,7 +52,7 @@ commit_data = {
     'content': file_content_base64,
     'sha': current_sha,
     'committer': {
-        'name': 'Nata',
+        'name': 'NataDias04',
         'email': 'natadiassantos@ucl.br'
     }
 }
