@@ -7,8 +7,8 @@ import requests
 MEU_TOKEN = 'MEU_TOKEN'
 
 # Dados de exemplo - Temperatura do solo ao longo do tempo
-tempo = 18 #np.arange(0, 24, 1)  # Horas do dia
-temperatura =  8 #np.random.randint(15, 25, size=len(tempo))  # Temperatura aleatória entre 15°C e 25°C
+tempo = np.arange(0, 24, 1)  # Horas do dia
+temperatura = np.random.randint(15, 25, size=len(tempo))  # Temperatura aleatória entre 15°C e 25°C
 
 # Criando o gráfico
 plt.figure(figsize=(10.9, 2.50))  # Define o tamanho do gráfico conforme solicitado
@@ -32,7 +32,7 @@ file_path = 'FRONTEND/grafico_temperatura_solo.png'
 commit_message = 'Atualizando gráfico de temperatura do solo'
 
 # Obter o token de acesso pessoal da variável de ambiente
-token = os.environ.get(MEU_TOKEN)
+token = os.environ.get('MEU_TOKEN')
 
 # Verifique se o token de acesso está sendo carregado corretamente
 print(token)
@@ -74,3 +74,4 @@ if response.status_code == 200:
     print('Commit realizado com sucesso.')
 else:
     print('Erro ao realizar o commit:', response.text)
+
