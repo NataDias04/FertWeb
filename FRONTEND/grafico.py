@@ -1,6 +1,10 @@
+import os
 import matplotlib.pyplot as plt
 import numpy as np
 import requests
+
+# Obter o token de acesso pessoal da variável de ambiente
+token = os.environ.get('GITHUB_TOKEN')
 
 # Dados de exemplo - Temperatura do solo ao longo do tempo
 tempo = 10 #np.arange(0, 24, 1)  # Horas do dia
@@ -25,22 +29,19 @@ github_repo = 'NataDias04/FertWeb'
 file_path = 'FRONTEND/grafico_temperatura_solo.png'
 github_url = f'https://api.github.com/repos/{github_repo}/contents/{file_path}'
 
-# Substitua 'SEU_TOKEN_AQUI' pelo seu token de acesso pessoal
-token = 'SEU_TOKEN_AQUI'
-
-with open('grafico_temperatura_solo.png', 'rb') as file:
+with open(file_path, 'rb') as file:
     file_content = file.read()
+
+headers = {
+    'Authorization': f'token {token}'
+}
 
 data = {
     'message': 'Atualizando gráfico de temperatura do solo',
     'content': file_content
 }
 
-headers = {
-    'Authorization': f'token {token}'
-}
-
-response = requests.put(github_url, json=data, headers=headers)
+response = requests.put(github_url, headers=headers, json=data)
 
 if response.status_code == 200:
     print('Gráfico de temperatura do solo foi atualizado no repositório.')
