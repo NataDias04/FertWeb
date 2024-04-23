@@ -18,6 +18,6 @@ jobs:
           python-version: '3.x' # Especifique a versão do Python que seu script requer
 
       - name: Run Python script
-        run: python path/to/your/script.py
+        run: python FRONTEND/grafico.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
