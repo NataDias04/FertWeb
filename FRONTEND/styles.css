@@ -48,7 +48,7 @@ body{
     align-items: center;
 }
 
-.dashboard1.conteudo1 {
+.dashboard1::first-line {
     align-self: flex-start;
 }
 
