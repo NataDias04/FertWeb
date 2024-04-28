@@ -50,7 +50,7 @@ body{
 
 .titulodashboar1 {
     justify-content: center;
-    align-items: top;
+    align-items: flex-start;
 }
 
 .message-list {
