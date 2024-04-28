@@ -50,20 +50,18 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0;
+    align-items: center; 
+    padding: 0; 
     margin: 0; 
 }
 
 #mensagens li {
+    width: 100%;
+    list-style-type: none;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: 1px solid red;
     flex: 1;
 }
-
 .dashboard2{
     background-color: white;
     margin-right: 30px;
