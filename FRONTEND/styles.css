@@ -57,6 +57,9 @@ body{
 
 #mensagens li {
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
     flex: 1;
 }
