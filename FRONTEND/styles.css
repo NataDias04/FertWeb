@@ -40,15 +40,24 @@ body{
 .dashboard1{
     background-color: white;
     margin-left: 30px;
-    height: 275px;
+    height: 320px;
     width: 350px;
+}
+
+#mensagens {
+    width: 250x;
+    height: 250px;
 }
 
 .dashboard2{
     background-color: white;
     margin-right: 30px;
-    height: 275px;
+    height: 320px;
     width: 1090px;
+}
+
+#TemperaturaDiaria{
+    align-items: center;
 }
 
 .caixa2{
@@ -61,14 +70,18 @@ body{
 .dashboard3{
     background-color: white;
     margin-left: 30px;
-    height: 275px;
+    height: 320px;
     width: 1090px;
+}
+
+#MediasDoAno{
+    align-items: center;
 }
 
 .dashboard4{
     background-color: white;
     margin-right: 30px;
-    height: 275px;
+    height: 320px;
     width: 350px; 
 }
 
@@ -83,26 +96,26 @@ body{
 .dashboard5{
     background-color: white;
     margin-left: 30px;
-    height: 275px;
+    height: 320px;
     width: 350px; 
 }
 
 .dashboard6{
     background-color: white;
-    height: 275px;
+    height: 320px;
     width: 350px; 
 }
 
 .dashboard7{
     background-color: white;
-    height: 275px;
+    height: 320px;
     width: 350px; 
 }
 
 .dashboard8{
     background-color: white;
     margin-right: 30px;
-    height: 275px;
+    height: 320px;
     width: 350px; 
 }
 
@@ -114,4 +127,3 @@ body{
     background-color: cornflowerblue;
     color: aliceblue;
 }
-
