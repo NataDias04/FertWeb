@@ -40,30 +40,30 @@ body{
 .dashboard1 {
     background-color: white;
     margin-left: 30px;
-    height: 320px; /* Defina a altura da dashboard1 */
+    height: 320px;
     width: 350px;
     display: flex;
-    justify-content: center; /* Centralize horizontalmente */
-    align-items: center; /* Centralize verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 #mensagens {
-    width: 100%; /* Ocupa toda a largura da div .dashboard1 */
-    height: 100%; /* Ocupa toda a altura da div .dashboard1 */
+    width: 100%;
+    height: 100%;
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    justify-content: center; /* Centralize verticalmente */
-    align-items: center; /* Centralize horizontalmente */
-    padding: 0; /* Remova qualquer preenchimento */
-    margin: 0; /* Remova qualquer margem */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 #mensagens li {
     width: 100%;
     list-style-type: none;
     text-align: center;
-    border: 1px solid red; /* Apenas para visualizar o tamanho do elemento */
-    flex: 1; /* Faça com que o elemento <li> ocupe todo o espaço vertical disponível */
+    border: 1px solid red;
 }
 .dashboard2{
     background-color: white;
