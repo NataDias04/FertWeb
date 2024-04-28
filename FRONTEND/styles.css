@@ -44,17 +44,17 @@ body{
     width: 350px;
 }
 
-#mensagens li{
-    width: 250x;
+#mensagens li {
+    width: 100%;
     height: 250px;
     display: flex;
-    width: 100%;
     padding: 0;
     margin: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    text-align: center;
 }
 
 .dashboard2{
