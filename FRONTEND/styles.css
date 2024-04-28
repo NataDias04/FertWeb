@@ -48,6 +48,10 @@ body{
     align-items: center;
 }
 
+.dashboard1.conteudo1 {
+    align-self: flex-start;
+}
+
 .message-list {
     text-align: center;
     display: flex;
