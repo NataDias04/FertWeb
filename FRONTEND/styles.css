@@ -47,6 +47,8 @@ body{
 #mensagens {
     width: 250x;
     height: 250px;
+    justify-content: center;
+    align-items: center;
 }
 
 .dashboard2{
