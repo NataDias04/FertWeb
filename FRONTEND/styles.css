@@ -42,7 +42,6 @@ body{
     margin-left: 30px;
     height: 320px;
     width: 350px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
