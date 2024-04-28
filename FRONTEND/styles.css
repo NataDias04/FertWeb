@@ -47,6 +47,7 @@ body{
 #mensagens {
     width: 250x;
     height: 250px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
