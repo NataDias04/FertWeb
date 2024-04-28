@@ -44,11 +44,12 @@ body{
     width: 350px;
     display: flex;
     flex-direction: column;
+     justify-content: center;
     align-items: center;
 }
 
 .titulodashboar1 {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0;
     padding: 0;
