@@ -30,9 +30,9 @@ body{
     margin: 0 auto;
 }
 
-.caixa1{
+.caixa1 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-top: 100px;
 }
@@ -42,10 +42,11 @@ body{
     margin-left: 30px;
     height: 320px;
     width: 350px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .dashboard2{
     background-color: white;
     margin-right: 30px;
