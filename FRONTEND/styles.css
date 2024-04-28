@@ -44,7 +44,7 @@ body{
     width: 350px;
 }
 
-#mensagens {
+#mensagens li{
     width: 250x;
     height: 250px;
     display: flex;
