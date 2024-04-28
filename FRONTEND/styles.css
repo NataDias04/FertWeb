@@ -55,6 +55,7 @@ body{
     align-items: center;
     list-style-type: none;
     text-align: center;
+    border: 1px solid red;
 }
 
 .dashboard2{
