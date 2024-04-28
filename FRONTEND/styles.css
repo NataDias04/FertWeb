@@ -44,6 +44,17 @@ body{
     width: 350px;
 }
 
+#mensagens {
+    width: 100%; /* Ocupa toda a largura da div .dashboard1 */
+    height: 100%; /* Ocupa toda a altura da div .dashboard1 */
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center; /* Centralize verticalmente */
+    align-items: center; /* Centralize horizontalmente */
+    padding: 0; /* Remova qualquer preenchimento */
+    margin: 0; /* Remova qualquer margem */
+}
+
 #mensagens li {
     width: 100%;
     height: 250px;
