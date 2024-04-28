@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="styles.css">
     
         <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
-    
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
         <title>Fert Web</title>
 </head>
 
@@ -30,17 +32,19 @@
 <div class="caixa1">
         <div class="dashboard1">
                 conteudo1
-                <ul class="message-list" id="mensagens"></ul>
+                <!--<ul class="message-list" id="mensagens"></ul>-->
             </div>
         
             <div class="dashboard2">
                 conteudo2
+                <canvas id="TemperaturaDiaria" width="1000" height="265"></canvas>
             </div>
 </div>   
 
 <div class="caixa2">
         <div class="dashboard3">
                 conteudo3
+                <canvas id="MediasDoAno" width="1000" height="265"></canvas>
         </div>
 
         <div class="dashboard4">
@@ -73,6 +77,9 @@
 
 <script type="module" src="RecebedorDeDados.js"></script>
 <script type="module" src="EnvioDeDados.js"></script>
+
+<script src="grafico.js"></script>
+
 </body>
 
 </html>
