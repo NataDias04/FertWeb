@@ -45,6 +45,7 @@ body{
 }
 
 #mensagens li {
+    width: 350px;
     height: 250px;
     display: flex;
     justify-content: center;
