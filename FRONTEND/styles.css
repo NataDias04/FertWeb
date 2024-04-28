@@ -47,6 +47,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.message-list {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
 .dashboard2{
     background-color: white;
     margin-right: 30px;
