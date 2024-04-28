@@ -38,6 +38,7 @@ body{
 }
 
 .dashboard1{
+    display: flex;
     background-color: white;
     margin-left: 30px;
     height: 320px;
