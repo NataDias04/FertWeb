@@ -59,4 +59,3 @@ document.addEventListener('DOMContentLoaded', function () {
       options: options2
     });    
   });
-//graficos
