@@ -48,8 +48,7 @@ body{
 }
 
 .titulodashboar1 {
-    margin-top: auto; /* Coloca no topo verticalmente */
-    margin-bottom: auto; /* Empurra para baixo caso necessário */
+    margin-top: 0%;
 }
 
 .message-list {
@@ -57,7 +56,7 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-top: auto; /* Coloca no centro verticalmente */
+    margin-top: 50%;
 }
 
 .dashboard2{
