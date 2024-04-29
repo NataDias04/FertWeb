@@ -44,7 +44,7 @@ body{
     width: 350px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza horizontalmente */
+    align-items: center;
 }
 
 .titulodashboar1 {
@@ -56,7 +56,7 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
-    align-items: center;
+    justify-content: center;
 }
 
 .dashboard2{
