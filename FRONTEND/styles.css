@@ -114,6 +114,10 @@ body{
     width: 350px; 
 }
 
+#graficoNutricaoSolo{
+    justify-content:center;
+    align-items: center;
+}
 .dashboard6{
     background-color: white;
     height: 320px;
