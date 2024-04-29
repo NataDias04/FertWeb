@@ -44,23 +44,21 @@ body{
     width: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .titulodashboar1 {
     justify-content: flex-start;
     border: 1px solid red;
-    padding:0;
 }
 
 .message-list {
     text-align: center;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
     border: 1px solid red;
-    padding:0;
 }
 
 .dashboard2{
