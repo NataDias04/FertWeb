@@ -45,15 +45,16 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
 }
 
 .titulodashboar1 {
     border: 1px solid red;
+    align-self: flex-start;
 }
 
 .message-list {
     list-style-type: none;
+    align-self: center;
     padding: 0;
     margin: 0;
     border: 1px solid red;
