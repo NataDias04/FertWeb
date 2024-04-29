@@ -42,16 +42,18 @@ body{
     margin-left: 30px;
     height: 320px;
     width: 350px;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .titulodashboar1 {
+    align-items: center;
+    justify-content: flex-start;
     border: 1px solid red;
 }
 
 .message-list {
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
     border: 1px solid red;
