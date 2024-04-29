@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     var options1 = {
       scales: {
-        yAxis: [{
+        y: [{
           ticks: {
             beginAtZero: true
           }
