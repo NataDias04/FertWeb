@@ -59,5 +59,30 @@ document.addEventListener('DOMContentLoaded', function () {
       options: options2
     });
 
+  const dadosNPK = {
+    labels: ['Nitrogênio', 'Fósforo', 'Potássio'],
+    datasets: [{
+        label: 'Nutrição do Solo NPK',
+        data: [30, 40, 30], // Valores percentuais para cada nutriente
+        backgroundColor: [
+            'rgb(255, 99, 132)', // Cor para Nitrogênio
+            'rgb(54, 162, 235)', // Cor para Fósforo
+            'rgb(255, 205, 86)' // Cor para Potássio
+        ],
+        hoverOffset: 4
+    }]
+};
+
+// Configurações do gráfico
+const config = {
+    type: 'pie',
+    data: dadosNPK,
+};
+
+// Criação do gráfico de pizza
+var graficoNutricaoSolo = new Chart(
+    document.getElementById('graficoNutricaoSolo'),
+    config
+);
     
   });
