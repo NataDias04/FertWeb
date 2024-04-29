@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         backgroundColor: "rgba(75, 192, 192, 0.2)",
         borderColor: "rgba(75, 192, 192, 1)",
         borderWidth: 1,
-        data: [20, 22, 23, 24, 25, 23, 21,20, 22, 23, 24, 25, 23, 21,20, 22, 23, 24, 25, 23, 21,15,12,11],
+        data: [20, 22, 23, 24, 25, 23, 21,20, 22, 23, 24, 25, 23, 21,20, 22, 23, 24, 25, 23, 21,15,12,11]
       }]
     };
   
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
-        data: [15, 16, 17, 18, 20, 22, 24, 25, 24, 21, 18, 16], // Dados de exemplo
+        data: [15, 16, 17, 18, 20, 22, 24, 25, 24, 21, 18, 16] // Dados de exemplo
       }]
     };
   
