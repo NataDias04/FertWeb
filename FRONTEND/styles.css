@@ -42,6 +42,7 @@ body{
     margin-left: 30px;
     height: 320px;
     width: 350px;
+    position: relative;
 }
 
 .titulodashboar1 {
@@ -52,8 +53,10 @@ body{
 
 .message-list {
     list-style-type: none;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0;
     margin: 0;
     border: 1px solid red;
