@@ -77,6 +77,10 @@ document.addEventListener('DOMContentLoaded', function () {
 const config = {
     type: 'pie',
     data: dadosNPK,
+    options: {
+        responsive: true, // Ativa a responsividade
+        maintainAspectRatio: false // Permite que o tamanho seja controlado programaticamente
+    }
 };
 
 // Criação do gráfico de pizza
