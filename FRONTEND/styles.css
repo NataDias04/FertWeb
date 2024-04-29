@@ -47,7 +47,7 @@ body{
 
 .titulodashboar1 {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
     align-items: flex-start;
     border: 1px solid red;
 }
