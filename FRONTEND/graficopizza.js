@@ -14,10 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const config = {
-        type: 'doughnut', // Use 'doughnut' para criar um gráfico de rosquinha
+        type: 'doughnut',
         data: dadosNPK,
         options: {
-            maintainAspectRatio: false
+            aspectRatio: 1,
+            responsive: false
         }
     };
 
