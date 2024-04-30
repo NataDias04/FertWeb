@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const config = {
         type: 'pie',
         data: dadosNPK,
-        maintainAspectRatio: false;
+        maintainAspectRatio: false
     };
 
     var graficoNutricaoSolo = new Chart(
