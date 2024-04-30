@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const config = {
         type: 'pie',
         data: dadosNPK,
-        maintainAspectRatio: false
+        aspectRatio: 1, // Esta é a proporção altura/largura
+        responsive: false
     };
 
     var graficoNutricaoSolo = new Chart(
