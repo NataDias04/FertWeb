@@ -159,12 +159,12 @@ body{
   .dashboard6,
   .dashboard7,
   .dashboard8 {
-    width: 290px;
+    width: 320px;
   }
 
   #graficoNutricaoSolo{
     height: 280px;
-    width: 220px;  
+    width: 250px;  
     margin: 0 auto;
   }  
 
