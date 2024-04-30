@@ -139,7 +139,8 @@ body{
 .dashboard7{
     background-color: white;
     height: 320px;
-    width: 350px; 
+    width: 1090px; 
+    margin-right: 30px;
 }
 
 .container-fluid.end {
