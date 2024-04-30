@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const config = {
-        type: 'pie',
+        type: 'donut',
         data: dadosNPK,
         aspectRatio: 1, // Esta é a proporção altura/largura
         responsive: false
