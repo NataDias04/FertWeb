@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     var ctx2 = document.getElementById('MediasDoAno').getContext('2d');
     var myChart2 = new Chart(ctx2, {
-      type: 'line',
+      type: 'bar',
       data: data2,
       options: options2
     });    
