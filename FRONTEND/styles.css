@@ -153,12 +153,9 @@ body{
 }
 
 @media (min-width: 1450px) and (max-width: 1500px) {
-.dashboard1,
+  .dashboard1,
   .dashboard4,
-  .dashboard5,
-  .dashboard6,
-  .dashboard7,
-  .dashboard8 {
+  .dashboard6{
     width: 320px;
   }
 
@@ -169,7 +166,8 @@ body{
   }  
 
   .dashboard2,
-  .dashboard3{
+  .dashboard3,
+  .dashboard7{
     width: 980px;
   }
 
@@ -182,10 +180,7 @@ body{
 @media (min-width: 1200px) and (max-width: 1449px) {
   .dashboard1,
   .dashboard4,
-  .dashboard5,
-  .dashboard6,
-  .dashboard7,
-  .dashboard8 {
+  .dashboard6{
     width: 290px;
   }
 
@@ -196,7 +191,8 @@ body{
   }  
 
   .dashboard2,
-  .dashboard3{
+  .dashboard3,
+  .dashboard7{
     width: 870px;
   }
 
