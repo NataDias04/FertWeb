@@ -157,7 +157,24 @@ body{
 }
 
 @media (max-width: 1280px) {
+  .dashboard1,
+  .dashboard4,
+  .dashboard5,
+  .dashboard6,
+  .dashboard7,
+  .dashboard8 {
+    width: 250px; /* Reduza a largura do gráfico */
+  }
 
+  .dashboard2,
+  .dashboard3{
+    width: 990px;
+  }
+
+  #TemperaturaDiaria {
+    width: 800px;
+    height: 265px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -173,6 +190,11 @@ body{
   .dashboard2,
   .dashboard3{
     width: 990px;
+  }
+
+  #TemperaturaDiaria {
+    width: 800px;
+    height: 265px;
   }
     
 }
