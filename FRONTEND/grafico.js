@@ -54,4 +54,31 @@ document.addEventListener('DOMContentLoaded', function () {
       data: data2,
       options: options2
     });    
+
+    var data3 = {
+  labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+  datasets: [{
+    label: "Temperatura Média °C",
+    fill: false,
+    backgroundColor: "rgba(54, 162, 235, 0.2)",
+    borderColor: "rgba(54, 162, 235, 1)",
+    borderWidth: 1,
+    data: [18, 19, 20, 21, 22, 23, 24, 23, 22, 20, 19, 18] // Dados de exemplo
+  }]
+};
+
+var options3 = {
+  scales: {
+    y: [{
+        beginAtZero: true
+    }]
+  }
+};
+
+var ctx3 = document.getElementById('MediasDoAno').getContext('2d');
+var myChart3 = new Chart(ctx3, {
+  type: 'line',
+  data: data3,
+  options: options3
+});
   });
