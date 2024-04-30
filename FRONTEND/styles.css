@@ -115,6 +115,8 @@ body{
 }
 
 #graficoNutricaoSolo{
+    justify-content: center;
+    align-items: center;
     display: block; 
     box-sizing: border-box;
     height: 200px;
