@@ -99,6 +99,18 @@ body{
     width: 350px; 
 }
 
+.botao-enviar{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+
+
 .caixa3{
     display: flex;
     justify-content:space-between;
@@ -120,17 +132,6 @@ body{
     align-items: center;
     margin-top: 2.5%;
     margin-bottom: 100px; 
-}
-
-.botao-enviar{
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    border: none
-    background-color: cornflowerblue;
-    border-radius: 20px;
 }
 
 .dashboard6{
