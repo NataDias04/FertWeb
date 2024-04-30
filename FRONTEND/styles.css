@@ -175,7 +175,7 @@ body{
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1200px) and (max-width: 1449px) {
   .dashboard1,
   .dashboard4,
   .dashboard5,
