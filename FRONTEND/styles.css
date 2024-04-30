@@ -75,8 +75,8 @@ body{
 }
 
 .caixa2{
-    display: flex;
-    justify-content:space-between;
+    /*display: flex;*/
+    /*justify-content:space-between;*/
     align-items: center;
     margin-top: 2.5%;   
 }
@@ -94,6 +94,7 @@ body{
 
 .dashboard4{
     background-color: white;
+    align-items: center;
     margin-right: 30px;
     height: 320px;
     width: 350px; 
