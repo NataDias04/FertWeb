@@ -110,12 +110,9 @@ body{
     width: calc(100% - 60px);
     margin-left: 30px;
     margin-right: 30px;
-    justify-content: center;
-    align-items: center;
 }
 
 #MediasDoAno{
-    justify-content: center;
     align-items: center;
 }
 
