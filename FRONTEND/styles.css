@@ -153,45 +153,11 @@ body{
 }
 
 @media (max-width: 1366px) {
-  .dashboard1,
-  .dashboard4,
-  .dashboard5,
-  .dashboard6,
-  .dashboard7,
-  .dashboard8 {
-    width: 265px; /* Reduza a largura do gráfico */
-  }
 
-  .dashboard2,
-  .dashboard3{
-    width: 600px;
-  }
-
-  #TemperaturaDiaria {
-    width: 400px;
-    height: 265px;
-  }
 }
 
 @media (max-width: 1280px) {
-  .dashboard1,
-  .dashboard4,
-  .dashboard5,
-  .dashboard6,
-  .dashboard7,
-  .dashboard8 {
-    width: 250px; /* Reduza a largura do gráfico */
-  }
 
-  .dashboard2,
-  .dashboard3{
-    width: 500px;
-  }
-
-  #TemperaturaDiaria {
-    width: 400px;
-    height: 265px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -201,7 +167,7 @@ body{
   .dashboard6,
   .dashboard7,
   .dashboard8 {
-    width: 250px; /* Reduza a largura do gráfico */
+    width: 150px; /* Reduza a largura do gráfico */
   }
 
   .dashboard2,
