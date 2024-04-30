@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const config = {
-        type: 'donut',
+        type: 'doughnut', // Use 'doughnut' para criar um gráfico de rosquinha
         data: dadosNPK,
-        aspectRatio: 1, // Esta é a proporção altura/largura
-        responsive: false
+        options: {
+            aspectRatio: 1, // Esta é a proporção altura/largura
+            responsive: false
+        }
     };
 
     var graficoNutricaoSolo = new Chart(
@@ -25,3 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
         config
     );
 });
+
