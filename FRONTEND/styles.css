@@ -151,7 +151,13 @@ body{
     background-color: cornflowerblue;
     color: aliceblue;
 }
-
+@media (min-width: 1500px) and (max-width: 1550px) {
+  .dashboard1,
+  .dashboard4,
+  .dashboard6{
+    width: 120px;
+  }  
+}
 @media (min-width: 1450px) and (max-width: 1500px) {
   .dashboard1,
   .dashboard4,
