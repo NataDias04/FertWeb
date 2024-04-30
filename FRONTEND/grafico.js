@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var data2 = {
       labels: ["seg.","ter.","qua.","qui.","sex.","sab.","dom."],
       datasets: [{
-        label: "Médias do Ano",
+        label: "Temperatura °C",
         fill: false,
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
