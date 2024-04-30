@@ -182,16 +182,22 @@ body{
   .dashboard6,
   .dashboard7,
   .dashboard8 {
-    width: 350px; /* Reduza a largura do gráfico */
+    width: 320px;
   }
+
+  #graficoNutricaoSolo{
+    height: 280px;
+    width: 250px;  
+    margin: 0 auto;
+  }  
 
   .dashboard2,
   .dashboard3{
-    width: 300px;
+    width: 980px;
   }
 
   #TemperaturaDiaria {
-    width: 300px;
+    width: 980px;
     height: 300px;
   }
 }
