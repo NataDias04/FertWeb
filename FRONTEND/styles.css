@@ -164,11 +164,11 @@ body{
 
   .dashboard2,
   .dashboard3{
-    width: 1010px;
+    width: 980px;
   }
 
   #TemperaturaDiaria {
-    width: 1010px;
+    width: 980px;
     height: 300px;
   }
 }
