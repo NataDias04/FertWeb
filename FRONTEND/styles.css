@@ -114,7 +114,12 @@ body{
     width: 350px; 
 }
 
-#graficoNutricaoSolo
+#graficoNutricaoSolo{
+    display: block; 
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;  
+}
 
 .dashboard6{
     background-color: white;
