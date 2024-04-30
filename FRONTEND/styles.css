@@ -109,6 +109,22 @@ body{
 
 .dashboard5{
     background-color: white;
+    height: 320px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.caixa4{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 2.5%;
+    margin-bottom: 100px; 
+}
+
+.dashboard6{
+    background-color: white;
     margin-left: 30px;
     height: 320px;
     width: 350px; 
@@ -120,21 +136,8 @@ body{
     margin: 0 auto;
 }
 
-.dashboard6{
-    background-color: white;
-    height: 320px;
-    width: 350px; 
-}
-
 .dashboard7{
     background-color: white;
-    height: 320px;
-    width: 350px; 
-}
-
-.dashboard8{
-    background-color: white;
-    margin-right: 30px;
     height: 320px;
     width: 350px; 
 }
