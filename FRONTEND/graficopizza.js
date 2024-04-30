@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         type: 'doughnut', // Use 'doughnut' para criar um gráfico de rosquinha
         data: dadosNPK,
         options: {
-            aspectRatio: 1, // Esta é a proporção altura/largura
-            responsive: false
+            maintainAspectRatio: false
         }
     };
 
