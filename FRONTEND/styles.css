@@ -159,8 +159,14 @@ body{
   .dashboard6,
   .dashboard7,
   .dashboard8 {
-    width: 350px; /* Reduza a largura do gráfico */
+    width: 320px; /* Reduza a largura do gráfico */
   }
+
+  #graficoNutricaoSolo{
+    height: 250px;
+    width: 280px;  
+    margin: 0 auto;
+  }  
 
   .dashboard2,
   .dashboard3{
