@@ -155,8 +155,14 @@ body{
   .dashboard1,
   .dashboard4,
   .dashboard6{
-    width: 120px;
-  }  
+    width: 320px;
+  }
+
+  .dashboard2,
+  .dashboard3,
+  .dashboard7{
+    width: 1000px;
+  }
 }
 @media (min-width: 1450px) and (max-width: 1500px) {
   .dashboard1,
