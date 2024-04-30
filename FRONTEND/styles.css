@@ -182,7 +182,7 @@ body{
   .dashboard6,
   .dashboard7,
   .dashboard8 {
-    width: 320px;
+    width: 290px;
   }
 
   #graficoNutricaoSolo{
@@ -193,35 +193,13 @@ body{
 
   .dashboard2,
   .dashboard3{
-    width: 980px;
+    width: 870px;
   }
 
   #TemperaturaDiaria {
-    width: 980px;
+    width: 870px;
     height: 300px;
   }
-}
-
-@media (max-width: 1024px) {
-  .dashboard1,
-  .dashboard4,
-  .dashboard5,
-  .dashboard6,
-  .dashboard7,
-  .dashboard8 {
-    width: 350px; /* Reduza a largura do gráfico */
-  }
-
-  .dashboard2,
-  .dashboard3{
-    width: 554px;
-  }
-
-  #TemperaturaDiaria {
-    width: 650px;
-    height: 300px;
-  }
-    
 }
 
 @media (max-width: 768px) {
