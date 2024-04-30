@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     };
   
-    var ctx2 = document.getElementById('MediasDoAno').getContext('2d');
+    var ctx2 = document.getElementById('MediasDaSemana').getContext('2d');
     var myChart2 = new Chart(ctx2, {
       type: 'bar',
       data: data2,
