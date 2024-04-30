@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Segundo gráfico: Médias do ano
     var data2 = {
-      labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+      labels: ["seg.","ter.","qua.","qui.","sex.","sab.","dom."],
       datasets: [{
         label: "Médias do Ano",
         fill: false,
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
-        data: [15, 16, 17, 18, 20, 22, 24, 25, 24, 21, 18, 16] // Dados de exemplo
+        data: [15, 16, 17, 18, 20, 22, 24] // Dados de exemplo
       }]
     };
   
