@@ -75,8 +75,8 @@ body{
 }
 
 .caixa2{
-    /*display: flex;*/
-    /*justify-content:space-between;*/
+    display: flex;
+    justify-content:space-between;
     align-items: center;
     margin-top: 2.5%;   
 }
@@ -95,14 +95,13 @@ body{
 .dashboard4{
     background-color: white;
     align-items: center;
+    justify-content: center;
     margin-right: 30px;
     height: 320px;
     width: 350px; 
 }
 
 .botao-enviar{
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     text-align: center;
     color: white;
