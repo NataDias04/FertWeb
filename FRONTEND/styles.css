@@ -148,12 +148,35 @@ body{
     color: aliceblue;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
+.dashboard1,
+  .dashboard4,
+  .dashboard5,
+  .dashboard6,
+  .dashboard7,
+  .dashboard8 {
+    width: 320px;
+  }
 
+  #graficoNutricaoSolo{
+    height: 280px;
+    width: 250px;  
+    margin: 0 auto;
+  }  
+
+  .dashboard2,
+  .dashboard3{
+    width: 980px;
+  }
+
+  #TemperaturaDiaria {
+    width: 980px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 1450px) {
-.dashboard1,
+  .dashboard1,
   .dashboard4,
   .dashboard5,
   .dashboard6,
