@@ -29,26 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var indiceAtual = 0;
 
-    function adicionarMensagemAoGrafico(mensagem) {
-
-        /*if (indiceAtual === 0) {
-            
-            myChart1.data.datasets[0].data = Array(24).fill(null);
-
-            myChart1.update();;
-        }*/
-        
-        var dadosAtuais = myChart1.data.datasets[0].data;
-
-        dadosAtuais[indiceAtual] = parseInt(mensagem);
-
-        myChart1.update();
-
-        indiceAtual = (indiceAtual + 1) % 24;
-        
-        if (indiceAtual === 23) {
-            indiceAtual = 0;
-        }
+    
     }
   
     // Segundo gráfico: Médias do ano
@@ -106,3 +87,24 @@ var myChart3 = new Chart(ctx3, {
   options: options3
 });
   });
+
+function adicionarMensagemAoGrafico(mensagem) {
+
+        /*if (indiceAtual === 0) {
+            
+            myChart1.data.datasets[0].data = Array(24).fill(null);
+
+            myChart1.update();;
+        }*/
+        
+        var dadosAtuais = myChart1.data.datasets[0].data;
+
+        dadosAtuais[indiceAtual] = parseInt(mensagem);
+
+        myChart1.update();
+
+        indiceAtual = (indiceAtual + 1) % 24;
+        
+        if (indiceAtual === 23) {
+            indiceAtual = 0;
+        }
