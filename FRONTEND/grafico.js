@@ -26,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
       data: data1,
       options: options1
     });
-
-    var indiceAtual = 0;
   
     // Segundo gráfico: Médias do ano
     var data2 = {
@@ -84,6 +82,8 @@ var myChart3 = new Chart(ctx3, {
   options: options3
 });
   });
+
+var indiceAtual = 0;
 
 function adicionarMensagemAoGrafico(mensagem) {
 
