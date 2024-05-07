@@ -46,7 +46,7 @@ window.adicionarMensagemAoGrafico = function(mensagem) {
 
         indiceAtual = (indiceAtual + 1) % 24;
         
-        if (indiceAtual === 23) {
+        if (indiceAtual === 24) {
             indiceAtual = 0;
         }
 }
