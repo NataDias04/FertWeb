@@ -7,13 +7,13 @@ const client = mqtt.connect('wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq
 const topic = 'Api/Raspberry';
 
 client.on('connect', function () {
-    console.log('Conectado ao broker MQTT');
+    console.log('Conectado ao broker MQTT Api/Raspberry');
 
     client.subscribe(topic, function (err) {
         if (err) {
-            console.error('Erro ao se inscrever no tópico', err);
+            console.error('Erro ao se inscrever no tópico Api/Raspberry', err);
         } else {
-            console.log('Inscrição no tópico bem-sucedida');
+            console.log('Inscrição no tópico bem-sucedida Api/Raspberry');
         }
     });
 });
