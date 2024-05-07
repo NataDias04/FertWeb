@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         backgroundColor: "rgba(75, 192, 192, 0.2)",
         borderColor: "rgba(75, 192, 192, 1)",
         borderWidth: 1,
-        data: [20, 22, 23, 24, 25, 23, 21,20, 22, 23, 24, 25, 23, 21,20, 22, 23, 24, 25, 23, 21,15,12,11]
+        data: Array(24).fill(null)
       }]
     };
   
@@ -26,6 +26,30 @@ document.addEventListener('DOMContentLoaded', function () {
       data: data1,
       options: options1
     });
+
+    var indiceAtual = 0;
+
+    function adicionarMensagemAoGrafico(mensagem) {
+
+        if (indiceAtual === 0) {
+            
+            myChart1.data.datasets[0].data = Array(24).fill(null);
+
+            myChart1.update();;
+        }
+        
+        var dadosAtuais = myChart1.data.datasets[0].data;
+
+        dadosAtuais[indiceAtual] = parseInt(mensagem);
+
+        myChart1.update();
+
+        indiceAtual = (indiceAtual + 1) % 24;
+        
+        if (indiceAtual === 23) {
+            indiceAtual = 0;
+        }
+    }
   
     // Segundo gráfico: Médias do ano
     var data2 = {
