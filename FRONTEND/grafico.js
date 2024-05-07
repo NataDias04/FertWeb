@@ -106,3 +106,7 @@ function adicionarMensagemAoGrafico(mensagem) {
             indiceAtual = 0;
         }
 }
+
+function TesteDeErro(){
+    console.log("deu certo!!");
+}
