@@ -28,7 +28,7 @@ client.on('message', function (receivedTopic, message) {
 
     ultimaMensagem = message.toString();
     exibirUltimaMensagemNaPagina();
-    function TesteDeErro();
+    function testeDeErro();
     //adicionarMensagemAoGrafico(ultimaMensagem);
 });
 
