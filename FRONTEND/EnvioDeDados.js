@@ -2,7 +2,7 @@
     clientId: '123projetopi',
     username: 'projetopi',
     password: '12345678'
-}); 
+});  */
 
 const topic = 'Api/Raspberry';
 
@@ -16,7 +16,7 @@ client.on('connect', function () {
             console.log('Inscrição no tópico bem-sucedida Api/Raspberry');
         }
     });
-});*/
+});
 
 function enviarMensagem() {
     const mensagem = 'Olá, Raspberry Pi!'; // Defina a mensagem que deseja enviar
