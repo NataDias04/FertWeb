@@ -107,6 +107,6 @@ function adicionarMensagemAoGrafico(mensagem) {
         }
 }
 
-function TesteDeErro(){
+function testeDeErro(){
     console.log("deu certo!!");
 }
