@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var indiceAtual = 0;
-
-    
-    }
   
     // Segundo gráfico: Médias do ano
     var data2 = {
@@ -108,3 +105,4 @@ function adicionarMensagemAoGrafico(mensagem) {
         if (indiceAtual === 23) {
             indiceAtual = 0;
         }
+}
