@@ -28,8 +28,8 @@ client.on('message', function (receivedTopic, message) {
 
     ultimaMensagem = message.toString();
     exibirUltimaMensagemNaPagina();
-    testeDeErro();
-    //adicionarMensagemAoGrafico(ultimaMensagem);
+    //testeDeErro();
+    adicionarMensagemAoGrafico(ultimaMensagem);
 });
 
 function exibirUltimaMensagemNaPagina() {
