@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.adicionarMensagemAoGrafico = function(mensagem) {
 
-        /*if (indiceAtual === 0) {
+        if (indiceAtual === 0) {
             
             myChart1.data.datasets[0].data = Array(24).fill(null);
 
             myChart1.update();;
-        }*/
+        }
         
         var dadosAtuais = myChart1.data.datasets[0].data;
 
