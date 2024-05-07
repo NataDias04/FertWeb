@@ -85,7 +85,7 @@ var myChart3 = new Chart(ctx3, {
 
 var indiceAtual = 0;
 
-function adicionarMensagemAoGrafico(mensagem) {
+window.adicionarMensagemAoGrafico = function(mensagem) {
 
         /*if (indiceAtual === 0) {
             
