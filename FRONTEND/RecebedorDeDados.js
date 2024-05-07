@@ -23,13 +23,19 @@ client.on('connect', function () {
     }
 });
 
-client.on('message', function (receivedTopic, message) {
-    console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
+const CodigoDaUltimaMensagem = "";
 
-    ultimaMensagem = message.toString();
-    exibirUltimaMensagemNaPagina();
-    //testeDeErro();
-    adicionarMensagemAoGrafico(ultimaMensagem);
+client.on('message', function (receivedTopic, message) {
+
+    const CodigoDaNovaMensagem = message.toString() + ' (' + new Date().toLocaleString() + ')';
+    
+    if(CodigoDaNovaMensagem !== CodigoDaUltimaMensagem){
+        console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
+        exibirUltimaMensagemNaPagina();
+        //testeDeErro();
+        adicionarMensagemAoGrafico( message.toString());
+        CodigoDaUltimaMensagem = CodigoDaNovaMensagem;
+    }  
 });
 
 function exibirUltimaMensagemNaPagina() {
