@@ -23,11 +23,11 @@ client.on('connect', function () {
     }
 });
 
-const CodigoDaUltimaMensagem = "";
+let CodigoDaUltimaMensagem = "";
 
 client.on('message', function (receivedTopic, message) {
 
-    const CodigoDaNovaMensagem = message.toString() + ' (' + new Date().toLocaleString() + ')';
+    let CodigoDaNovaMensagem = message.toString() + ' (' + new Date().toLocaleString() + ')';
     
     if(CodigoDaNovaMensagem !== CodigoDaUltimaMensagem){
         console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
