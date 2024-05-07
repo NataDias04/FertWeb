@@ -1,8 +1,8 @@
-const client = mqtt.connect('wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq.cloud:8884/mqtt', {
+/*const client = mqtt.connect('wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq.cloud:8884/mqtt', {
     clientId: '123projetopi',
     username: 'projetopi',
     password: '12345678'
-});
+}); 
 
 const topic = 'Api/Raspberry';
 
@@ -16,7 +16,7 @@ client.on('connect', function () {
             console.log('Inscrição no tópico bem-sucedida Api/Raspberry');
         }
     });
-});
+});*/
 
 function enviarMensagem() {
     const mensagem = 'Olá, Raspberry Pi!'; // Defina a mensagem que deseja enviar
