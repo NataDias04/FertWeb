@@ -1,4 +1,3 @@
-import mqtt from 'mqtt';
 let isConnected = false;
 
 const mqttConfig = {
