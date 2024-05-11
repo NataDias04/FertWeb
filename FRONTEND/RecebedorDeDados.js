@@ -1,4 +1,4 @@
-import { mqttClient, isConnected } from './mqttClient';
+import { mqttClient, isConnected } from './mqttClient.js';
 const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = "";
