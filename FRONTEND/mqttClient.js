@@ -1,4 +1,4 @@
-const mqtt = require('mqtt');
+import mqtt from 'mqtt';
 let isConnected = false;
 
 const mqttConfig = {
@@ -8,6 +8,8 @@ const mqttConfig = {
     username: 'projetopi',
     password: '12345678'
 };
+
+const mqttClient = mqtt.connect(mqttConfig);
 
 mqttClient.on('connect', function () {
     if (!isConnected) {
@@ -25,6 +27,4 @@ mqttClient.on('reconnect', function () {
     console.log('Tentando reconectar ao broker MQTT');
 });
 
-const mqttClient = mqtt.connect(mqttConfig);
-
-module.exports = { mqttClient, isConnected };
+export { mqttClient, isConnected };
