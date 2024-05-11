@@ -1,4 +1,4 @@
-const { mqttClient, isConnected } = require('./mqttClient');
+import { mqttClient, isConnected } from './mqttClient';
 const topic = 'Api/Raspberry';
 
 if (isConnected) {
