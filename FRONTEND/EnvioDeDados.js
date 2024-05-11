@@ -1,4 +1,4 @@
-const mqttClient = require('./mqttClient');
+const { mqttClient, isConnected } = require('./mqttClient');
 const topic = 'Api/Raspberry';
 
 function enviarMensagem() {
