@@ -7,7 +7,7 @@ if (isConnected) {
     console.log('Conectado ao broker MQTT para recebimento de dados');
 }
 
-client.on('message', function (receivedTopic, message) {
+mqttClient.on('message', function (receivedTopic, message) {
 
     let CodigoDaNovaMensagem = message.toString() + ' (' + new Date().toLocaleString() + ')';
     
