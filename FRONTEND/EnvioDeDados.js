@@ -1,6 +1,10 @@
 const { mqttClient, isConnected } = require('./mqttClient');
 const topic = 'Api/Raspberry';
 
+if (isConnected) {
+    console.log('Conectado ao broker MQTT para envio de dados');
+}
+
 function enviarMensagem() {
     const mensagem = 'Olá, Raspberry Pi!';
     client.publish(topic, mensagem, function (err) {
