@@ -1,4 +1,4 @@
-const { mqttClient, isConnected } = require('./mqttClient');
+import { mqttClient, isConnected } from './mqttClient';
 const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = "";
