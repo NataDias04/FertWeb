@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
     var data = {
         labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
         datasets: [{
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             pointBorderWidth: 1,
             pointRadius: 3,
             pointHoverRadius: 5,
-            data: [50, 60, 70, 80, 90, 100, 110, 120, 110, 90, 70, 60] // Dados de exempl
+            data: [50, 60, 70, 80, 90, 100, 110, 120, 110, 90, 70, 60]
         }]
     };
 
