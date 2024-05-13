@@ -31,7 +31,7 @@ function exibirUltimaMensagemNaPagina() {
 }*/
 
 
-import { mqttClient, isConnected } from './mqttClient.js';
+/*import { mqttClient, isConnected } from './mqttClient.js';
 const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = '';
@@ -72,4 +72,46 @@ mqttClient.on('connect', function () {
 // Verifica se houve erro na conexão
 mqttClient.on('error', function (error) {
     console.error('Erro de conexão:', error);
+});*/
+
+
+import { mqttClient, isConnected } from './mqttClient.js';
+const topic = 'Raspberry/Api';
+let ultimaMensagem = '';
+let CodigoDaUltimaMensagem = '';
+
+// Função para exibir a última mensagem na página
+function exibirUltimaMensagemNaPagina() {
+    console.log("A função exibe na página foi acionada");
+    const listaMensagens = document.getElementById('mensagens');
+    listaMensagens.innerHTML = '';
+
+    const novaMensagem = document.createElement('li');
+    novaMensagem.textContent = ultimaMensagem;
+
+    listaMensagens.appendChild(novaMensagem);
+}
+
+// Callback para mensagens recebidas
+mqttClient.on('message', function (receivedTopic, message) {
+    console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
+
+    exibirUltimaMensagemNaPagina();
+    adicionarMensagemAoGrafico(message.toString());
 });
+
+// Verifica se o cliente está conectado ao broker MQTT
+mqttClient.on('connect', function () {
+    console.log('Conectado ao broker MQTT raspberry/api');
+    
+    if (isConnected) {
+        console.log('Conectado ao broker MQTT para recebimento de dados');
+        // Agora você pode realizar as operações que dependem da conexão MQTT aqui
+    }
+});
+
+// Verifica se houve erro na conexão
+mqttClient.on('error', function (error) {
+    console.error('Erro de conexão:', error);
+});
+
