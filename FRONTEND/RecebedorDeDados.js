@@ -80,18 +80,6 @@ const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = '';
 
-// Função para exibir a última mensagem na página
-function exibirUltimaMensagemNaPagina() {
-    console.log("A função exibe na página foi acionada");
-    const listaMensagens = document.getElementById('mensagens');
-    listaMensagens.innerHTML = '';
-
-    const novaMensagem = document.createElement('li');
-    novaMensagem.textContent = ultimaMensagem;
-
-    listaMensagens.appendChild(novaMensagem);
-}
-
 // Callback para mensagens recebidas
 mqttClient.on('message', function (receivedTopic, message) {
     console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
