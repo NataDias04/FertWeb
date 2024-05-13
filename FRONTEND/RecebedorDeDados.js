@@ -80,7 +80,7 @@ const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 
     // Subscrever ao tópico
-    cliente.subscribe(topic, function (err) {
+    mqttClient.subscribe(topic, function (err) {
         if (err) {
             console.error('Erro ao se inscrever no tópico', err);
         } else {
