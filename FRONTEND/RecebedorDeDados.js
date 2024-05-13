@@ -31,16 +31,16 @@ mqttClient.on('message', function (receivedTopic, message) {
     listaMensagens.appendChild(novaMensagem);
 }*/
 
-function  exibirUltimaMensagemNaPagina ( )  {
-    const  listaMensagens  =  documento . getElementById ( 'mensagens' ) ;
+function exibirUltimaMensagemNaPagina() {
+    const listaMensagens = document.getElementById('mensagens');
 
-    mqttClient . on ( 'mensagem' ,  função  ( recebidoTopic ,  mensagem )  {
-        const  novaMensagem  =  documento . criarElemento ( 'li' ) ;
-        novaMensagem . textContent  =  mensagem . toString ( )  +  ' ('  +  nova  data ( ) .toLocaleString ( ) + '  )' ; 
+    mqttClient.on('message', function(recebidoTopic, mensagem) {
+        const novaMensagem = document.createElement('li');
+        novaMensagem.textContent = mensagem.toString() + ' (' + new Date().toLocaleString() + ')';
 
-        listaMensagens . HTML interno  =  '' ;
-        listaMensagens . anexarChild ( novaMensagem ) ;
-    } ) ;
+        listaMensagens.innerHTML = '';
+        listaMensagens.appendChild(novaMensagem);
+    });
 }
 
 // Verifica se o cliente está conectado ao broker MQTT
