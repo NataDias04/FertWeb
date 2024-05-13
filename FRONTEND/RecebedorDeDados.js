@@ -36,6 +36,8 @@ const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = '';
 
+console.log(isConnected);
+
 if (isConnected) {
     console.log('Conectado ao broker MQTT para recebimento de dados');
 }
