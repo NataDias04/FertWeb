@@ -62,6 +62,7 @@ mqttClient.on('message', function (receivedTopic, message) {
 
 // Função para exibir a última mensagem na página
 function exibirUltimaMensagemNaPagina() {
+    Console.WriteLine("A função exibe na pagina foi acionada");
     const listaMensagens = document.getElementById('mensagens');
     listaMensagens.innerHTML = '';
 
