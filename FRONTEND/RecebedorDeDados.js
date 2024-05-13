@@ -78,8 +78,8 @@ mqttClient.on('error', function (error) {
 import { mqttClient, isConnected } from './mqttClient.js';
 const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
-let CodigoDaUltimaMensagem = '';
 
+    // Subscrever ao tópico
     cliente.subscribe(topic, function (err) {
         if (err) {
             console.error('Erro ao se inscrever no tópico', err);
