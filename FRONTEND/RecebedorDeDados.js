@@ -36,27 +36,18 @@ const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = '';
 
-// Verifica se o cliente está conectado ao broker MQTT
 if (isConnected) {
     console.log('Conectado ao broker MQTT para recebimento de dados');
 }
 
 // Callback para mensagens recebidas
 mqttClient.on('message', function (receivedTopic, message) {
-    let CodigoDaNovaMensagem = message.toString() + ' (' + new Date().toLocaleString() + ')';
     
-    // Verifica se a mensagem é diferente da última mensagem recebida
-    if (CodigoDaNovaMensagem !== CodigoDaUltimaMensagem) {
         console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
-        
-        // Chama a função para exibir a última mensagem na página
+
         exibirUltimaMensagemNaPagina();
         
-        // Chama a função para adicionar a mensagem ao gráfico
         adicionarMensagemAoGrafico(message.toString());
-        
-        // Atualiza o código da última mensagem recebida
-        CodigoDaUltimaMensagem = CodigoDaNovaMensagem;
     }  
 });
 
