@@ -22,10 +22,12 @@ mqttClient.on('message', function (receivedTopic, message) {
 function exibirUltimaMensagemNaPagina() {
     const listaMensagens = document.getElementById('mensagens');
     
-    listaMensagens.innerHTML = '';
-
-    const novaMensagem = document.createElement('li');
-    novaMensagem.textContent = ultimaMensagem;
-    listaMensagens.appendChild(novaMensagem);
+    mqttClient.on('message', function (receivedTopic, message) {
+        const novaMensagem = document.createElement('li');
+        novaMensagem.textContent = message.toString() + ' (' + new Date().toLocaleString() + ')';
+        
+        listaMensagens.innerHTML = '';
+        listaMensagens.appendChild(novaMensagem);
+    });
 }
 
