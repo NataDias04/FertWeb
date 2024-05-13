@@ -80,7 +80,7 @@ const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = '';
 
-cliente.on('connect', function () {
+mqttClient.on('connect', function () {
     console.log('Conectado ao broker MQTT');
 
     cliente.subscribe(topic, function (err) {
