@@ -2,7 +2,7 @@ let isConnected = false;
 
 const mqttConfig = {
     host: 'wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq.cloud:8884/mqtt',
-    clientId: '123projetopi',
+    clientId: 'projetopi333',
     username: 'projetopi',
     password: '12345678'
 };
