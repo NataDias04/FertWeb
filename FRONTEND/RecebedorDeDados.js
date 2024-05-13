@@ -48,7 +48,7 @@ mqttClient.on('message', function (receivedTopic, message) {
         exibirUltimaMensagemNaPagina();
         
         adicionarMensagemAoGrafico(message.toString());
-    }  
+    });
 
 // Função para exibir a última mensagem na página
 function exibirUltimaMensagemNaPagina() {
