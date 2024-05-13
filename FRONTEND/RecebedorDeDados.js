@@ -31,7 +31,7 @@ function exibirUltimaMensagemNaPagina() {
 }*/
 
 
-import { mqttClient, isConnected } from 'mqttClient.js';
+import { mqttClient, isConnected } from './mqttClient.js';
 const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = '';
