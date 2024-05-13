@@ -20,7 +20,7 @@ mqttClient.on('message', function (receivedTopic, message) {
 });
 
 // Função para exibir a última mensagem na página
-/8function exibirUltimaMensagemNaPagina() {
+/*function exibirUltimaMensagemNaPagina() {
     console.log("A função exibe na pagina foi acionada");
     const listaMensagens = document.getElementById('mensagens');
     listaMensagens.innerHTML = '';
