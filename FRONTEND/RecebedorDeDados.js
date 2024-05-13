@@ -20,7 +20,7 @@ mqttClient.on('message', function (receivedTopic, message) {
 });
 
 // Função para exibir a última mensagem na página
-function exibirUltimaMensagemNaPagina() {
+/8function exibirUltimaMensagemNaPagina() {
     console.log("A função exibe na pagina foi acionada");
     const listaMensagens = document.getElementById('mensagens');
     listaMensagens.innerHTML = '';
@@ -29,6 +29,18 @@ function exibirUltimaMensagemNaPagina() {
     novaMensagem.textContent = ultimaMensagem;
 
     listaMensagens.appendChild(novaMensagem);
+}*/
+
+function  exibirUltimaMensagemNaPagina ( )  {
+    const  listaMensagens  =  documento . getElementById ( 'mensagens' ) ;
+
+    mqttClient . on ( 'mensagem' ,  função  ( recebidoTopic ,  mensagem )  {
+        const  novaMensagem  =  documento . criarElemento ( 'li' ) ;
+        novaMensagem . textContent  =  mensagem . toString ( )  +  ' ('  +  nova  data ( ) .toLocaleString ( ) + '  )' ; 
+
+        listaMensagens . HTML interno  =  '' ;
+        listaMensagens . anexarChild ( novaMensagem ) ;
+    } ) ;
 }
 
 // Verifica se o cliente está conectado ao broker MQTT
