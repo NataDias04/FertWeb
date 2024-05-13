@@ -80,9 +80,6 @@ const topic = 'Raspberry/Api';
 let ultimaMensagem = '';
 let CodigoDaUltimaMensagem = '';
 
-mqttClient.on('connect', function () {
-    console.log('Conectado ao broker MQTT');
-
     cliente.subscribe(topic, function (err) {
         if (err) {
             console.error('Erro ao se inscrever no tópico', err);
@@ -90,7 +87,6 @@ mqttClient.on('connect', function () {
             console.log('Inscrição no tópico bem-sucedido');
         }
     });
-});
 
 // Callback para mensagens recebidas
 mqttClient.on('message', function (receivedTopic, message) {
