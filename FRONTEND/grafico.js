@@ -436,7 +436,8 @@ document.addEventListener('DOMContentLoaded', function () {
             contagemDeSemanas += 1;
 
             if (contagemDeSemanas === semanasParaOMes) {
-                var mediaMensal = somaTemperaturasDoMes / semanasParaOMes;
+                var TotalDoMes = myChart2.data.datasets[0].data;
+                var mediaMensal = somaTemperaturasDoMes / TotalDoMes.Lenght;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
                 contagemDeSemanas = 0;
                 somaTemperaturasDoMes = 0;
