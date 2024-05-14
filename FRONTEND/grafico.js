@@ -95,8 +95,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (contagemDeSemanas === semanasParaOMes) {
                 var TotalDoMes = myChart2.data.datasets[0].data;
-                const [minima , maxima , mediatemp] = minimaMediaMaximaTemp(TotalDoMes)
-                EvapotranspiracaoHargreaves(minima , maxima , mediatemp)
+                const [minima , maxima , mediatemp] = minimaMediaMaximaTemp(TotalDoMes);
+                var EvapoDoMes= EvapotranspiracaoHargreaves(minima , maxima , mediatemp);
+                InseriNoGraficoEvapo(EvapoDoMes);
                 var mediaMensal = somaTemperaturasDoMes / TotalDoMes.Lenght;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
                 contagemDeSemanas = 0;
