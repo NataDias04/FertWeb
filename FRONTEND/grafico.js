@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var indiceAtualSemana = 0;
     var contagemDeSemanas = 0;
     var somaTemperaturasDoMes = 0;
-    var semanasParaOMes = 4; // Ajuste conforme necessário
+    var semanasParaOMes = 1; // Ajuste conforme necessário
 
     window.adicionarMensagemAoGraficoTempDaSemana = function (media) {
         var dadosAtuaisSemana = myChart2.data.datasets[0].data;
