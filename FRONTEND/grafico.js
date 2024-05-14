@@ -245,8 +245,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 var TotalDoMes = myChart2.data.datasets[0].data.filter(temp => temp !== null);
                 var mediaMensal = somaTemperaturasDoMes / TotalDoMes.length;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
+                console.log(TotalDoMes);
                 //minimaMediaMaximaTemp();
                 //EvapotranspiracaoHargreaves(tempMin, tempMax, tempMedia, radExtraterrestre);
+                //InseriNoGraficoEvapo(evapodomes);
                 contagemDeSemanas = 0;
                 somaTemperaturasDoMes = 0;
             }
