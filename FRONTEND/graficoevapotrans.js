@@ -43,12 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-let temperaturasDeUmMes = [];
-
-function acumuladorDeTemperatura(temperatura) {
-    temperaturasDeUmMes.push(temperatura);
-}
-
 function minimaMediaMaximaTemp(temperaturasDeUmMes) {
     let maiorTemperatura = temperaturasDeUmMes[0];
     let menorTemperatura = temperaturasDeUmMes[0];
