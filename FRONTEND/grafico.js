@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (indiceAtualSemana === 0) {
             contagemDeSemanas += 1;
+            console.log( contagemDeSemanas);
 
             if (contagemDeSemanas === semanasParaOMes) {
                 var TotalDoMes = myChart2.data.datasets[0].data;
