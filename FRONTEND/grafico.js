@@ -246,6 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var mediaMensal = somaTemperaturasDoMes / TotalDoMes.length;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
                 //minimaMediaMaximaTemp();
+                //EvapotranspiracaoHargreaves(tempMin, tempMax, tempMedia, radExtraterrestre);
                 contagemDeSemanas = 0;
                 somaTemperaturasDoMes = 0;
             }
