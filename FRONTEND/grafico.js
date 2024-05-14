@@ -431,21 +431,18 @@ document.addEventListener('DOMContentLoaded', function () {
         somaTemperaturasDoMes += media;
         indiceAtualSemana = (indiceAtualSemana + 1) % 7;
 
-        var currentMonth = new Date().getMonth();
-        var daysInMonth = new Date(new Date().getFullYear(), currentMonth + 1, 0).getDate();
-        var semanasDoMes = Math.ceil(daysInMonth / 7);
-
         if (indiceAtualSemana === 0) {
             contagemDeSemanas += 1;
-        }
 
-        if (contagemDeSemanas === semanasDoMes) {
-            var mediaMensal = somaTemperaturasDoMes / contagemDeSemanas;
-            adicionarMensagemAoGraficoTempDoAno(mediaMensal);
-            contagemDeSemanas = 0;
-            somaTemperaturasDoMes = 0;
-            myChart2.data.datasets[0].data = Array(7).fill(null);
-            myChart2.update();
+            // Supondo 4 semanas por mês para simplificação
+            if (contagemDeSemanas === 4) {
+                var mediaMensal = somaTemperaturasDoMes / 4;
+                adicionarMensagemAoGraficoTempDoAno(mediaMensal);
+                contagemDeSemanas = 0;
+                somaTemperaturasDoMes = 0;
+                myChart2.data.datasets[0].data = Array(7).fill(null);
+                myChart2.update();
+            }
         }
     }
 
@@ -487,4 +484,3 @@ document.addEventListener('DOMContentLoaded', function () {
         indiceAtualDoAno = (indiceAtualDoAno + 1) % 12;
     }
 });
-
