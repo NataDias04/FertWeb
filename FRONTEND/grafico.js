@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (contagemDeSemanas === semanasParaOMes) {
                 var TotalDoMes = myChart2.data.datasets[0].data;
+                Console.log(TotalDoMes);
                 var mediaMensal = somaTemperaturasDoMes / TotalDoMes.Lenght;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
                 const [minima , maxima , mediatemp] = minimaMediaMaximaTemp(TotalDoMes);
