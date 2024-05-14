@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         myChart1.update();
         indiceAtual = (indiceAtual + 1) % 24;
 
-        if (indiceAtual === 0) {
+        if (indiceAtual === 24) {
             var temperaturas = data1.datasets[0].data.filter(temp => temp !== null);
             var SomaDasTemperaturas = temperaturas.reduce((a, b) => a + b, 0);
             var MediaDeTemperaturas = SomaDasTemperaturas / temperaturas.length;
