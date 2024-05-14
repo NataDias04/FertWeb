@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*let temperaturasDeUmMes = [];
+let temperaturasDeUmMes = [];
 
 function acumuladorDeTemperatura(temperatura) {
     temperaturasDeUmMes.push(temperatura);
@@ -81,4 +81,4 @@ function minimaMediaMaximaTemp(temperaturasDeUmMes) {
         double eto = 0.0023 * Math.Sqrt(tempMax - tempMin) * (tempMedia + 17.8) * Math.Sqrt(radExtraterrestre);
         return eto;
     }
-    */
+    
