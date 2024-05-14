@@ -42,3 +42,35 @@ document.addEventListener('DOMContentLoaded', function () {
         options: options
     });
 });
+
+/*let temperaturasDeUmMes = [];
+
+function acumuladorDeTemperatura(temperatura) {
+    temperaturasDeUmMes.push(temperatura);
+}
+
+function minimaMediaMaximaTemp(temperaturasDeUmMes) {
+    let maiorTemperatura = temperaturasDeUmMes[0];
+    let menorTemperatura = temperaturasDeUmMes[0];
+    let somaTemperatura = 0;
+
+    for (let i = 0; i < temperaturasDeUmMes.length; i++) {
+        somaTemperatura += temperaturasDeUmMes[i];
+
+        if (maiorTemperatura < temperaturasDeUmMes[i]) {
+            maiorTemperatura = temperaturasDeUmMes[i];
+        }
+
+        if (menorTemperatura > temperaturasDeUmMes[i]) {
+            menorTemperatura = temperaturasDeUmMes[i];
+        }
+    }
+
+    let mediaTemperatura = somaTemperatura / temperaturasDeUmMes.length;
+
+    return {
+        menor: menorTemperatura,
+        maior: maiorTemperatura,
+        media: mediaTemperatura
+    };
+}*/
