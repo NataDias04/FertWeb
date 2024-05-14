@@ -15,6 +15,9 @@ mqttClient.subscribe(topic, function (err) {
 mqttClient.on('message', function (receivedTopic, message) {
     console.log('Mensagem recebida no tópico', receivedTopic, ':', message.toString());
 
+    // Atualizar a última mensagem
+    ultimaMensagem = message.toString();
+    
     exibirUltimaMensagemNaPagina()
     adicionarMensagemAoGrafico(message.toString());
 });
