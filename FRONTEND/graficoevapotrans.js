@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             pointBorderWidth: 1,
             pointRadius: 3,
             pointHoverRadius: 5,
-            data: [50, 60, 70, 80, 90, 100, 110, 120, 110, 90, 70, 60]
+            data: Array(12).fill(null)
         }]
     };
 
