@@ -75,4 +75,8 @@ function minimaMediaMaximaTemp(temperaturasDeUmMes) {
         double eto = 0.0023 * Math.Sqrt(tempMax - tempMin) * (tempMedia + 17.8) * Math.Sqrt(radExtraterrestre);
         return eto;
     }
+
+    public void InseriNoGraficoEvapo(evapodomes){
+        
+    }
     
