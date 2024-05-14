@@ -76,7 +76,23 @@ function minimaMediaMaximaTemp(temperaturasDeUmMes) {
         return eto;
     }
 
+    
     public void InseriNoGraficoEvapo(evapodomes){
-        
+         if (indiceAtual === 0) {
+            myChart1.data.datasets[0].data = Array(24).fill(null);
+            myChart1.update();
+        }
+
+        var dadosAtuais = myChart1.data.datasets[0].data;
+        dadosAtuais[indiceAtual] = parseInt(mensagem);
+        myChart1.update();
+        indiceAtual = (indiceAtual + 1) % 24;
+
+        if (indiceAtual === 0) {
+            var temperaturas = data1.datasets[0].data.filter(temp => temp !== null);
+            var SomaDasTemperaturas = temperaturas.reduce((a, b) => a + b, 0);
+            var MediaDeTemperaturas = SomaDasTemperaturas / temperaturas.length;
+            adicionarMensagemAoGraficoTempDaSemana(MediaDeTemperaturas);
+        }
     }
     
