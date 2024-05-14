@@ -76,23 +76,21 @@ function minimaMediaMaximaTemp(temperaturasDeUmMes) {
         return eto;
     }
 
-    
-    public void InseriNoGraficoEvapo(evapodomes){
-         if (indiceAtual === 0) {
-            myChart1.data.datasets[0].data = Array(24).fill(null);
-            myChart1.update();
-        }
+    let indiceAtualEvapo = 0;
 
-        var dadosAtuais = myChart1.data.datasets[0].data;
-        dadosAtuais[indiceAtual] = parseInt(mensagem);
-        myChart1.update();
-        indiceAtual = (indiceAtual + 1) % 24;
-
-        if (indiceAtual === 0) {
-            var temperaturas = data1.datasets[0].data.filter(temp => temp !== null);
-            var SomaDasTemperaturas = temperaturas.reduce((a, b) => a + b, 0);
-            var MediaDeTemperaturas = SomaDasTemperaturas / temperaturas.length;
-            adicionarMensagemAoGraficoTempDaSemana(MediaDeTemperaturas);
-        }
+function InseriNoGraficoEvapo(evapodomes) {
+    // Inicializa o array de dados com 24 posições nulas na primeira execução
+    if (indiceAtualEvapo === 0) {
+        Chart.data.datasets[0].data = Array(24).fill(null);
+        Chart.update();
     }
+
+    // Atualiza o dado na posição atual do índice
+    let dadosAtuais = Chart.data.datasets[0].data;
+    dadosAtuais[indiceAtualEvapo] = parseInt(evapodomes, 10);
+    Chart.update();
+
+    // Incrementa o índice e reseta se necessário
+    indiceAtualEvapo = (indiceAtualEvapo + 1) % 12;
+}
     
