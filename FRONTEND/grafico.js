@@ -422,31 +422,30 @@ document.addEventListener('DOMContentLoaded', function () {
     var indiceAtualSemana = 0;
     var contagemDeSemanas = 0;
     var somaTemperaturasDoMes = 0;
+    var semanasParaOMes = 4; // Ajuste conforme necessário
 
     window.adicionarMensagemAoGraficoTempDaSemana = function (media) {
-        if (indiceAtualSemana === 0) {
-            myChart1.data.datasets[0].data = Array(24).fill(null);
-            myChart1.update();
-            contagemDeSemanas = 0;
-        }
-        
         var dadosAtuaisSemana = myChart2.data.datasets[0].data;
         dadosAtuaisSemana[indiceAtualSemana] = media;
         myChart2.update();
 
         somaTemperaturasDoMes += media;
-        
         indiceAtualSemana = (indiceAtualSemana + 1) % 7;
-        
-        contagemDeSemanas += 1;
 
-            // Supondo 4 semanas por mês para simplificação
-            if (contagemDeSemanas === 4) {
-                var mediaMensal = somaTemperaturasDoMes / 4;
+        if (indiceAtualSemana === 0) {
+            contagemDeSemanas += 1;
+
+            if (contagemDeSemanas === semanasParaOMes) {
+                var mediaMensal = somaTemperaturasDoMes / semanasParaOMes;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
                 contagemDeSemanas = 0;
                 somaTemperaturasDoMes = 0;
             }
+
+            // Limpar os dados semanais após cada semana completada
+            myChart2.data.datasets[0].data = Array(7).fill(null);
+            myChart2.update();
+        }
     }
 
     // Terceiro gráfico: Médias do ano
