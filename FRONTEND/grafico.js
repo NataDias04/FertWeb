@@ -420,7 +420,7 @@ document.addEventListener('DOMContentLoaded', function () {
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
-        data: [15, 16, 17, 18, 20, 22, 24]
+        data: Array(7).fill(null)
       }]
     };
   
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function () {
         backgroundColor: "rgba(54, 162, 235, 0.2)",
         borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 1,
-        data: [18, 19, 20, 21, 22, 23, 24, 23, 22, 20, 19, 18] 
+        data: Array(12).fill(null)
         }]
     };
 
