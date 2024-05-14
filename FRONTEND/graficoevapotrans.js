@@ -73,4 +73,12 @@ function minimaMediaMaximaTemp(temperaturasDeUmMes) {
         maior: maiorTemperatura,
         media: mediaTemperatura
     };
-}*/
+}
+
+    //método Hargreaves
+    public double EvapotranspiracaoHargreaves(double tempMin, double tempMax, double tempMedia, double radExtraterrestre)
+    {
+        double eto = 0.0023 * Math.Sqrt(tempMax - tempMin) * (tempMedia + 17.8) * Math.Sqrt(radExtraterrestre);
+        return eto;
+    }
+    */
