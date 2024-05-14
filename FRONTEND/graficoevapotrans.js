@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function minimaMediaMaximaTemp(temperaturasDeUmMes) {
+window.minimaMediaMaximaTemp = function (temperaturasDeUmMes) {
     let maiorTemperatura = temperaturasDeUmMes[0];
     let menorTemperatura = temperaturasDeUmMes[0];
     let somaTemperatura = 0;
@@ -70,7 +70,7 @@ function minimaMediaMaximaTemp(temperaturasDeUmMes) {
 }
 
     //método Hargreaves
-    public double EvapotranspiracaoHargreaves(double tempMin, double tempMax, double tempMedia, double radExtraterrestre)
+    window.EvapotranspiracaoHargreaves = function(double tempMin, double tempMax, double tempMedia, double radExtraterrestre)
     {
         double eto = 0.0023 * Math.Sqrt(tempMax - tempMin) * (tempMedia + 17.8) * Math.Sqrt(radExtraterrestre);
         return eto;
@@ -78,7 +78,7 @@ function minimaMediaMaximaTemp(temperaturasDeUmMes) {
 
     let indiceAtualEvapo = 0;
 
-function InseriNoGraficoEvapo(evapodomes) {
+window.InseriNoGraficoEvapo = function (evapodomes) {
     // Inicializa o array de dados com 24 posições nulas na primeira execução
     if (indiceAtualEvapo === 0) {
         Chart.data.datasets[0].data = Array(24).fill(null);
