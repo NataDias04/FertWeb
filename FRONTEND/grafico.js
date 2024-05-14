@@ -83,34 +83,35 @@ document.addEventListener('DOMContentLoaded', function () {
     var semanasParaOMes = 4; // Ajuste conforme necessário
 
     window.adicionarMensagemAoGraficoTempDaSemana = function (media) {
-        var dadosAtuaisSemana = myChart2.data.datasets[0].data;
-        dadosAtuaisSemana[indiceAtualSemana] = media;
-        myChart2.update();
+    var dadosAtuaisSemana = myChart2.data.datasets[0].data;
+    dadosAtuaisSemana[indiceAtualSemana] = media;
+    myChart2.update();
 
-        somaTemperaturasDoMes += media;
-        indiceAtualSemana = (indiceAtualSemana + 1) % 7;
+    somaTemperaturasDoMes += media;
+    indiceAtualSemana = (indiceAtualSemana + 1) % 7;
 
-        if (indiceAtualSemana === 0) {
-            contagemDeSemanas += 1;
-            console.log( contagemDeSemanas);
-
-            if (contagemDeSemanas === semanasParaOMes) {
-                var TotalDoMes = myChart2.data.datasets[0].data;
-                Console.log(TotalDoMes);
-                var mediaMensal = somaTemperaturasDoMes / TotalDoMes.Lenght;
-                adicionarMensagemAoGraficoTempDoAno(mediaMensal);
-                const [minima , maxima , mediatemp] = minimaMediaMaximaTemp(TotalDoMes);
-                var EvapoDoMes= EvapotranspiracaoHargreaves(minima , maxima , mediatemp , 15.0);
-                InseriNoGraficoEvapo(EvapoDoMes);
-                contagemDeSemanas = 0;
-                somaTemperaturasDoMes = 0;
-            }
-
-            // Limpar os dados semanais após cada semana completada
-            myChart2.data.datasets[0].data = Array(7).fill(null);
-            myChart2.update();
-        }
+    if (indiceAtualSemana === 0) {
+        contagemDeSemanas += 1;
+        console.log(contagemDeSemanas);
     }
+
+    if (contagemDeSemanas === semanasParaOMes) {
+        var TotalDoMes = myChart2.data.datasets[0].data;
+        console.log(TotalDoMes); // Corrigido para console.log
+        var mediaMensal = somaTemperaturasDoMes / TotalDoMes.length; // Corrigido para length
+        adicionarMensagemAoGraficoTempDoAno(mediaMensal);
+        const { menor, maior, media: mediatemp } = minimaMediaMaximaTemp(TotalDoMes); // Corrigido para media
+        var EvapoDoMes = EvapotranspiracaoHargreaves(menor, maior, mediatemp, 15.0); // Corrigido para mediatemp
+        InseriNoGraficoEvapo(EvapoDoMes);
+        contagemDeSemanas = 0;
+        somaTemperaturasDoMes = 0;
+    }
+
+    // Limpar os dados semanais após cada semana completada
+    myChart2.data.datasets[0].data = Array(7).fill(null);
+    myChart2.update();
+}
+
 
     // Terceiro gráfico: Médias do ano
     var data3 = {
