@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var mediaMensal = somaTemperaturasDoMes / TotalDoMes.length;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
                 console.log(listaMedias);
-                const [minima, maxima , media] = minimaMediaMaximaTemp(listaMedias);
+                const {minima, maxima , media} = minimaMediaMaximaTemp(listaMedias);
                 //const evapo = EvapotranspiracaoHargreaves(minima, maxima , media);
                 //InseriNoGraficoEvapo(evapo);
                 listaMedias = [];
