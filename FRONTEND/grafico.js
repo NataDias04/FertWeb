@@ -229,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var contagemDeSemanas = 0;
     var somaTemperaturasDoMes = 0;
     var semanasParaOMes = 1; // Ajuste conforme necessário
+    let listaMedias = []; 
 
     window.adicionarMensagemAoGraficoTempDaSemana = function (media) {
         var dadosAtuaisSemana = myChart2.data.datasets[0].data;
@@ -237,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         somaTemperaturasDoMes += media;
         indiceAtualSemana = (indiceAtualSemana + 1) % 7;
-
+        listaMedias.push(media)
         if (indiceAtualSemana === 0) {
             contagemDeSemanas += 1;
 
@@ -245,10 +246,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 var TotalDoMes = myChart2.data.datasets[0].data.filter(temp => temp !== null);
                 var mediaMensal = somaTemperaturasDoMes / TotalDoMes.length;
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
-                console.log(TotalDoMes);
-                //const [minima, maxima , media] = minimaMediaMaximaTemp(TotalDoMes);
+                console.log(listaMedias);
+                const [minima, maxima , media] = minimaMediaMaximaTemp(listaMedias);
                 //const evapo = EvapotranspiracaoHargreaves(minima, maxima , media);
                 //InseriNoGraficoEvapo(evapo);
+                listaMedias = [];
                 contagemDeSemanas = 0;
                 somaTemperaturasDoMes = 0;
             }
