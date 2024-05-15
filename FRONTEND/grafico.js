@@ -248,6 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 adicionarMensagemAoGraficoTempDoAno(mediaMensal);
                 console.log(listaMedias);
                 const {minima, maxima , media} = minimaMediaMaximaTemp(listaMedias);
+                console.log(minima , maxima,media);
                 //const evapo = EvapotranspiracaoHargreaves(minima, maxima , media);
                 //InseriNoGraficoEvapo(evapo);
                 listaMedias = [];
