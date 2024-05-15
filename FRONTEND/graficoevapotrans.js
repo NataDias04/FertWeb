@@ -159,11 +159,11 @@ window.minimaMediaMaximaTemp = function (temperaturasDeUmMes) {
     let mediaTemperatura = somaTemperatura / temperaturasDeUmMes.length;
 
     return {
-        menor: menorTemperatura,
-        maior: maiorTemperatura,
+        minima: menorTemperatura,
+        maxima: maiorTemperatura,
         media: mediaTemperatura
     };
-}
+};
 
 // Corrigir a sintaxe para JavaScript
 window.EvapotranspiracaoHargreaves = function(tempMin, tempMax, tempMedia, radExtraterrestre) {
