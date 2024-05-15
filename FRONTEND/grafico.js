@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
 
     // Primeiro gráfico: Temperatura diária
     var data1 = {
@@ -144,9 +144,9 @@
 
         indiceAtualDoAno = (indiceAtualDoAno + 1) % 12;
     }
-});*/
+});
 
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
 
     // Primeiro gráfico: Temperatura diária
     var data1 = {
@@ -296,4 +296,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
         indiceAtualDoAno = (indiceAtualDoAno + 1) % 12;
     }
-});
+});*/
