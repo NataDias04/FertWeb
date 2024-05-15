@@ -249,8 +249,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(listaMedias);
                 const {minima, maxima , media} = minimaMediaMaximaTemp(listaMedias);
                 console.log(minima , maxima,media);
-                //const evapo = EvapotranspiracaoHargreaves(minima, maxima , media);
-                //InseriNoGraficoEvapo(evapo);
+                const evapo = EvapotranspiracaoHargreaves(minima, maxima , media);
+                console.log(evapo);
+                InseriNoGraficoEvapo(evapo);
                 listaMedias = [];
                 contagemDeSemanas = 0;
                 somaTemperaturasDoMes = 0;
