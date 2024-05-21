@@ -1,4 +1,4 @@
-/*body{
+body{
     background-color: aliceblue;
 }
 
@@ -161,44 +161,4 @@
     align-items: end;
     background-color: cornflowerblue;
     color: aliceblue;
-}*/
-
-/* Estilos para as divs maiores */
-.dashboard2, .dashboard3, .dashboard5, .dashboard7 {
-    width: calc(100% - 60px); /* Ajuste conforme necessário */
-    margin-left: 30px;
-    margin-right: 30px;
 }
-
-/* Estilos para as divs menores */
-.dashboard1, .dashboard4, .dashboard6 {
-    width: 350px; /* Tamanho fixo */
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-/* Estilos para o container pai */
-.caixa1, .caixa2, .caixa3, .caixa4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2.5%; /* Ajuste conforme necessário */
-}
-
-/* Estilos para a seção de cabeçalho */
-.container-fluid.header {
-    padding: 30px 2%;
-}
-
-/* Estilos para a seção do rodapé */
-.container-fluid.end {
-    padding: 30px 2%;
-}
-
-/* Estilos para a barra de menu */
-.menu {
-    font-size: 24px;
-}
-
-/* Outros estilos podem ser mantidos conforme necessário */
-
