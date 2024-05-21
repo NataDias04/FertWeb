@@ -20,6 +20,8 @@ ClienteMqtt.on('message', function (recebidoDoTopico, mensagem) {
     ultimaMensagem = mensagem.toString();
     exibirUltimaMensagemNaPagina();
     adicionarMensagemAoGrafico(mensagem.toString());
+    //const chaveTemperatura = adicionarTemperatura(temperaturaRecebida);
+    //console.log("Temperatura adicionada com sucesso. Chave gerada:", chaveTemperatura);
 });
 
 // Funções
