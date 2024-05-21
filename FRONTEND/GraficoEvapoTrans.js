@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     labelString: 'Evapotranspiração (mm)'
                 },
                 ticks: {
-                    beginAtZero: true
+                    min: 0.001;
                 }
             }],
             xAxes: [{
