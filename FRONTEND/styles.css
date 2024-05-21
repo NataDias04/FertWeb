@@ -127,10 +127,9 @@ body{
 }
 
 #MediasDoAno{
-    height: 320px;
-    width: 70%;
-    align-items: center;
-    justify-content: center;
+    height: calc(100% - 40px); /* Ajusta a altura do gráfico */
+    width: 100%;
+    margin-top: 10px;
 }
 
 /* gafrico maiores*/
