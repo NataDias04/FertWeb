@@ -18,4 +18,6 @@ export function adicionarTemperatura(temperatura) {
 
     // Retorna o timestamp como identificador único, se necessário
     return timestamp;
+
+    
 }
