@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(minima, maxima, media);
                 const evapo = calcularEvapotranspiracaoHargreaves(minima, maxima, media, 15.0);
                 console.log(evapo);
-                InseriNoGraficoEvapo(evapo);
+                inserirNoGraficoEvapo(evapo);
                 listaMedias = [];
                 contagemDeSemanas = 0;
                 somaTemperaturasDoMes = 0;
