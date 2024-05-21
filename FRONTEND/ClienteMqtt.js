@@ -1,32 +1,32 @@
 let isConnected = false;
 
-const mqttConfig = {
+const ConfigMqtt = {
     host: 'wss://4b8d62e12d9744ec8e2fdea77a5e66e2.s1.eu.hivemq.cloud:8884/mqtt',
     clientId: 'projetopi333',
     username: 'projetopi',
     password: '12345678'
 };
 
-const mqttClient = mqtt.connect(mqttConfig.host, {
-    clientId: mqttConfig.clientId,
-    username: mqttConfig.username,
-    password: mqttConfig.password
+const ClienteMqtt = mqtt.connect(ConfigMqtt.host, {
+    clientId: ConfigMqtt.clientId,
+    username: ConfigMqtt.username,
+    password: ConfigMqtt.password
 });
 
-mqttClient.on('connect', function () {
+ClienteMqtt.on('connect', function () {
     if (!isConnected) {
         isConnected = true;
         console.log('Conectado ao broker MQTT');
     }
 });
 
-mqttClient.on('offline', function () {
+ClienteMqtt.on('offline', function () {
     isConnected = false;
     console.log('Desconectado do broker MQTT');
 });
 
-mqttClient.on('reconnect', function () {
+ClienteMqtt.on('reconnect', function () {
     console.log('Tentando reconectar ao broker MQTT');
 });
 
-export { mqttClient, isConnected };
+export { ClienteMqtt, isConnected };
