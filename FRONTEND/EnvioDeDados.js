@@ -1,4 +1,4 @@
-import { mqttClient, isConnected } from './mqttClient.js';
+import { ClienteMqtt, isConnected } from './mqttClient.js';
 const topic = 'Api/Raspberry';
 
 if (isConnected) {
@@ -7,7 +7,7 @@ if (isConnected) {
 
 function enviarMensagem() {
     const mensagem = 'Olá, Raspberry Pi!';
-    mqttClient.publish(topic, mensagem, function (err) {
+    ClienteMqtt.publish(topic, mensagem, function (err) {
         if (err) {
             console.error('Erro ao enviar mensagem:', err);
             exibirErro('Erro ao enviar mensagem: ' + err);
