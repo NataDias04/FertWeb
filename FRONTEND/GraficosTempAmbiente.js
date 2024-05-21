@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     var opcoesTemperaturaDiaria = {
+        maintainAspectRatio: false,
         scales: {
             y: {
                 beginAtZero: true
