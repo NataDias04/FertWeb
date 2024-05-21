@@ -2,5 +2,7 @@
   "dependencies": {
     "mqtt": "^5.5.0"
     "firebase": "^9.5.0"
+
+    
   }
 }
