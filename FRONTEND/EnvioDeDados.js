@@ -1,28 +1,29 @@
 import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
-const topic = 'Api/Raspberry';
+
+const topico = 'Api/Raspberry';
 
 if (isConnected) {
     console.log('Conectado ao broker MQTT para envio de dados');
-}
-
-function enviarMensagem() {
-    const mensagem = 'Olá, Raspberry Pi!';
-    ClienteMqtt.publish(topic, mensagem, function (err) {
-        if (err) {
-            console.error('Erro ao enviar mensagem:', err);
-            exibirErro('Erro ao enviar mensagem: ' + err);
-        } else {
-            console.log('Mensagem enviada com sucesso:', mensagem);
-        }
-    });
 }
 
 document.getElementById("botao-enviar").addEventListener("click", function() {
     enviarMensagem();
 });
 
+function enviarMensagem() {
+    const mensagem = 'Olá, Raspberry Pi!';
+    ClienteMqtt.publish(topico, mensagem, function (erro) {
+        if (erro) {
+            console.error('Erro ao enviar mensagem:', erro);
+            exibirErro('Erro ao enviar mensagem: ' + erro);
+        } else {
+            console.log('Mensagem enviada com sucesso:', mensagem);
+        }
+    });
+}
+
 function exibirErro(erro) {
-    const erroElement = document.getElementById('erro');
-    erroElement.textContent = erro;
-    erroElement.style.color = 'red';
+    const elementoErro = document.getElementById('erro');
+    elementoErro.textContent = erro;
+    elementoErro.style.color = 'red';
 }
