@@ -1,3 +1,5 @@
+
+
 using System;
 
 using System.Threading.Tasks;
@@ -189,11 +191,7 @@ public static async Task InicializarEnvio()
             using (System.IO.StreamReader reader = process.StandardOutput)
 
             {
-
                 string result = reader.ReadToEnd();
-
-
-
                 // Tente converter o valor para int
 
                 int temperatura;
@@ -201,9 +199,7 @@ public static async Task InicializarEnvio()
                 if (int.TryParse(result, out temperatura))
 
                 {
-
                     return temperatura;
-
                 }
 
                 else
