@@ -30,21 +30,6 @@ body{
     margin: 0 auto;
 }
 
-.caixa1 {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.dashboard1 {
-    background-color: white;
-    margin-left: 30px;
-    height: 320px;
-    width: 350px;
-    position: relative;
-}
-
 .titulodashboar1 {
     display: flex;
     justify-content: center;
@@ -63,42 +48,12 @@ body{
     border: 1px solid red;
 }
 
-.dashboard2{
-    background-color: white;
-    margin-right: 30px;
-    height: 320px;
-    width: 1090px;
-}
-
 #TemperaturaDiaria{
     align-items: center;
 }
 
-.caixa2{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin-top: 2.5%;   
-}
-
-.dashboard3{
-    background-color: white;
-    margin-left: 30px;
-    height: 320px;
-    width: 1090px;
-}
-
 #MediasDaSemana{
     align-items: center;
-}
-
-.dashboard4{
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    margin-right: 30px;
-    height: 320px;
-    width: 350px; 
 }
 
 .botao-enviar{
@@ -110,20 +65,34 @@ body{
     border-radius: 20px;
 }
 
+#graficoNutricaoSolo{
+    height: 280px;
+    width: 280px;  
+    margin: 0 auto;
+}
+
+
+/* linhas */
+
+.caixa1 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.caixa2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 2.5%;   
+}
 
 .caixa3{
     display: flex;
     justify-content:space-between;
     align-items: center;
     margin-top: 2.5%; 
-}
-
-.dashboard5{
-    background-color: white;
-    height: 320px;
-    width: calc(100% - 60px);
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .caixa4{
@@ -134,6 +103,38 @@ body{
     margin-bottom: 100px; 
 }
 
+
+
+
+
+
+/* div menores*/
+
+.dashboard1 {
+    background-color: white;
+    margin-left: 30px;
+    height: 320px;
+    width: 350px;
+    position: relative;
+}
+
+.dashboard4{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    height: 320px;
+    width: 350px; 
+}
+
+.dashboard5{
+    background-color: white;
+    height: 320px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 .dashboard6{
     background-color: white;
     margin-left: 30px;
@@ -141,19 +142,38 @@ body{
     width: 350px; 
 }
 
-#graficoNutricaoSolo{
-    height: 280px;
-    width: 280px;  
-    margin: 0 auto;
-}
 
-.dashboard7{
+
+
+
+
+/* gafrico maiores*/
+
+.dashboard2 , .dashboard3 , .dashboard7{
     background-color: white;
     height: 320px;
     width: 1090px; 
+}
+
+.dashboard2{
     margin-right: 30px;
 }
 
+.dashboard3{
+    margin-left: 30px;
+}
+
+.dashboard7{
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+/* final do site */
 .container-fluid.end {
     display: flex;
     padding:30px 2%;
