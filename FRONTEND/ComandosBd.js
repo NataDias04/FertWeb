@@ -1,4 +1,4 @@
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set } from "./firebase/database";
 
 export function adicionarTemperatura(temperatura) {
     // Obtém uma referência para o banco de dados
