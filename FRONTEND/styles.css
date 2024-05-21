@@ -92,35 +92,27 @@ body{
     margin-bottom: 5%; 
 }
 
-
-
-
-
-
 /* div menores*/
 
-.dashboard1 {
+.dashboard1 , .dashboard4, .dashboard6{
     background-color: white;
-    margin-left: 30px;
     height: 320px;
-    width: 350px;
+    width: 350px;   
+}
+.dashboard1 {
+    margin-left: 30px;
     position: relative;
 }
 
 .dashboard4{
-    background-color: white;
+    
     align-items: center;
     justify-content: center;
     margin-right: 30px;
-    height: 320px;
-    width: 350px; 
 }
 
 .dashboard6{
-    background-color: white;
     margin-left: 30px;
-    height: 320px;
-    width: 350px; 
 }
 
 
@@ -154,11 +146,6 @@ body{
 .dashboard7{
     margin-right: 30px;
 }
-
-
-
-
-
 
 
 /* final do site */
