@@ -1,4 +1,4 @@
-/*import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
+import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
 import { adicionarTemperatura } from './ComandosBd.js';
 
 const topico = 'Raspberry/Api';
@@ -46,9 +46,9 @@ ClienteMqtt.on('connect', function () {
 ClienteMqtt.on('error', function (erro) {
     console.error('Erro de conexão:', erro);
 });
-*/
 
-import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
+
+/*import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
 import { adicionarTemperatura } from './ComandosBd.js';
 
 const topico = 'Raspberry/Api';
@@ -105,5 +105,5 @@ ClienteMqtt.on('connect', function () {
 ClienteMqtt.on('error', function (erro) {
     console.error('Erro de conexão:', erro);
 });
-
+*/
 
