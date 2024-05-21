@@ -19,6 +19,9 @@ class CentralDeComando
         // Aguardar a conclusão de ambas as tarefas
         await Task.WhenAll(envioTask, recebimentoTask);
 
+        //Manter o servio funcionando
+        await Task.Delay(-1);
+
         Console.ReadLine();
     }
 }
