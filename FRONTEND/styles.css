@@ -239,3 +239,78 @@
 @media (max-width: 360px) {
 }
 */
+
+/* Layout para telas maiores (>= 992px) */
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5%;
+}
+
+.dashboard1,
+.dashboard2,
+.dashboard3,
+.dashboard4,
+.dashboard5,
+.dashboard6,
+.dashboard7 {
+  background-color: white;
+  margin: 10px;
+  flex: 1 1 auto;
+}
+
+/* Layout para tablets (768px a 992px) */
+@media (max-width: 992px) {
+  /* Ajustar layout para tablets */
+  .caixa1,
+  .caixa2,
+  .caixa3,
+  .caixa4 {
+    flex-direction: column; /* Empilha elementos verticalmente */
+  }
+
+  .dashboard1,
+  .dashboard4,
+  .dashboard6 {
+    width: 50%; /* Ocupa 50% da largura */
+  }
+
+  .dashboard2,
+  .dashboard3,
+  .dashboard5,
+  .dashboard7 {
+    width: 100%; /* Ocupa 100% da largura */
+  }
+}
+
+/* Layout para celulares (< 768px) */
+@media (max-width: 768px) {
+  /* Ajustar layout para celulares */
+  .caixa1,
+  .caixa2,
+  .caixa3,
+  .caixa4 {
+    flex-direction: column; /* Empilha elementos verticalmente */
+  }
+
+  .dashboard1,
+  .dashboard2,
+  .dashboard3,
+  .dashboard4,
+  .dashboard5,
+  .dashboard6,
+  .dashboard7 {
+    width: 100%; /* Ocupa 100% da largura */
+    margin-bottom: 10px; /* Adiciona margem entre elementos */
+  }
+
+  .dashboard5 {
+    display: none; /* Oculta dashboard5 em celulares */
+  }
+}
+
