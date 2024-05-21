@@ -5,21 +5,23 @@ const topico = 'Raspberry/Api';
 let ultimaMensagem = '';
 
 // Subscrever ao tópico
-ClienteMqtt.subscribe(topico, function (err) {
-    if (err) {
-        console.error('Erro ao se inscrever no tópico', err);
+ClienteMqtt.subscribe(topico, function (erro) {
+    if (erro) {
+        console.error('Erro ao se inscrever no tópico', erro);
     } else {
-        console.log('Inscrição no tópico bem-sucedido');
-        }
+        console.log('Inscrição no tópico bem-sucedida');
+    }
 });
 
 // Callback para mensagens recebidas
-ClienteMqtt.on('message', function (RecebidoDoTopico, messagem) {
-    console.log('Mensagem recebida no tópico', RecebidoDoTopico, ':', message.toString());
-    ultimaMensagem = message.toString();
-    exibirUltimaMensagemNaPagina()
-    adicionarMensagemAoGrafico(message.toString());
+ClienteMqtt.on('message', function (recebidoDoTopico, mensagem) {
+    console.log('Mensagem recebida no tópico', recebidoDoTopico, ':', mensagem.toString());
+    ultimaMensagem = mensagem.toString();
+    exibirUltimaMensagemNaPagina();
+    adicionarMensagemAoGrafico(mensagem.toString());
 });
+
+// Funções
 
 function exibirUltimaMensagemNaPagina() {
     const listaMensagens = document.getElementById('mensagens');
@@ -37,7 +39,8 @@ ClienteMqtt.on('connect', function () {
     }
 });
 
-ClienteMqtt.on('error', function (error) {
-    console.error('Erro de conexão:', error);
+ClienteMqtt.on('error', function (erro) {
+    console.error('Erro de conexão:', erro);
 });
+
 
