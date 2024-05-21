@@ -183,7 +183,7 @@ window.inserirNoGraficoEvapo = function (evapoDoMes) {
 
     // Atualiza o dado na posição atual do índice
     let dadosAtuais = graficoEvapotranspiracao.data.datasets[0].data;
-    dadosAtuais[indiceAtualEvapotranspiracao] = parseInt(evapoDoMes, 10);
+    dadosAtuais[indiceAtualEvapotranspiracao] = evapoDoMes;
     graficoEvapotranspiracao.update();
 
     // Incrementa o índice e reseta se necessário
