@@ -137,8 +137,11 @@ body{
 
 .dashboard2 , .dashboard3 , .dashboard7{
     background-color: white;
+    width: 80vw; /* largura relativa à largura da viewport */
+    max-width: 1090px;
+    
     height: 320px;
-    width: 1090px;
+    /*width: 1090px;*/
 }
 
 .dashboard2{
