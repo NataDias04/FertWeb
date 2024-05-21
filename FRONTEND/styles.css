@@ -130,6 +130,7 @@ body{
     height: calc(100% - 40px); /* Ajusta a altura do gráfico */
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* gafrico maiores*/
