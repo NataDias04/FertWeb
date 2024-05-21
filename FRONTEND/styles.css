@@ -48,11 +48,7 @@ body{
     border: 1px solid red;
 }
 
-#TemperaturaDiaria{
-    align-items: center;
-}
-
-#MediasDaSemana{
+#TemperaturaDiaria , #MediasDaSemana{
     align-items: center;
 }
 
@@ -64,6 +60,8 @@ body{
     background-color: cornflowerblue;
     border-radius: 20px;
 }
+
+/* grafico NPK */
 
 #graficoNutricaoSolo{
     height: 280px;
