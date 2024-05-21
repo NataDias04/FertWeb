@@ -123,6 +123,7 @@ body{
 
 #TemperaturaDiaria , #MediasDaSemana{
     align-items: center;
+    height: 320px;
 }
 
 /* gafrico maiores*/
