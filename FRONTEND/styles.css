@@ -80,22 +80,16 @@ body{
     align-items: center;
 }
 
-.caixa1 {
+.caixa2 , .caixa3 , .caixa4{
     margin-top: 2.5%;
-    /*margin-top: 100px;*/
 }
 
-.caixa2{
-    margin-top: 2.5%;   
-}
-
-.caixa3{
-    margin-top: 2.5%; 
+.caixa1 {
+    margin-top: 5%;
 }
 
 .caixa4{
-    margin-top: 2.5%;
-    margin-bottom: 100px; 
+    margin-bottom: 5%; 
 }
 
 
