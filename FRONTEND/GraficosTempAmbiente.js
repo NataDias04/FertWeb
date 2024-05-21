@@ -236,6 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var opcoesMediasAno = {
         maintainAspectRatio: false,
+        responsive: true,
         scales: {
             y: {
                 beginAtZero: true
