@@ -5,6 +5,7 @@ const topico = 'Raspberry/Api';
 
 let ultimaMensagem = '';
 
+
 // Subscrever ao tópico
 ClienteMqtt.subscribe(topico, function (erro) {
     if (erro) {
