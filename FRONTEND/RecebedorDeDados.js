@@ -1,4 +1,5 @@
 import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
+import { adicionarTemperatura } from './ComandosBd.js';
 
 const topico = 'Raspberry/Api';
 
