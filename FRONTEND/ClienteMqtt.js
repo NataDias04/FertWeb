@@ -7,7 +7,6 @@ const mqttConfig = {
     password: '12345678'
 };
 
-// Conectando ao servidor MQTT com as configurações fornecidas
 const mqttClient = mqtt.connect(mqttConfig.host, {
     clientId: mqttConfig.clientId,
     username: mqttConfig.username,
