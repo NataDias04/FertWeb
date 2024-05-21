@@ -48,10 +48,6 @@ body{
     border: 1px solid red;
 }
 
-#TemperaturaDiaria , #MediasDaSemana{
-    align-items: center;
-}
-
 .botao-enviar{
     cursor: pointer;
     text-align: center;
@@ -124,6 +120,11 @@ body{
     margin-right: 30px;
 }
 
+
+#TemperaturaDiaria , #MediasDaSemana{
+    align-items: center;
+    height: 320px;
+}
 
 /* gafrico maiores*/
 
