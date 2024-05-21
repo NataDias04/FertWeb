@@ -127,9 +127,8 @@ body{
 }
 
 #MediasDoAno{
-    height: calc(100% - 40px); /* Ajusta a altura do gráfico */
+    height: calc(100% - 40px);
     width: 100%;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
