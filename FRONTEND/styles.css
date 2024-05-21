@@ -74,31 +74,26 @@ body{
 
 /* linhas */
 
-.caixa1 {
+.caixa1 , .caixa2 , .caixa3 , .caixa4{
     display: flex;
     justify-content:space-between;
     align-items: center;
+}
+
+.caixa1 {
+    /*margin-top: 2.5%;*/
     margin-top: 100px;
 }
 
 .caixa2{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
     margin-top: 2.5%;   
 }
 
 .caixa3{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
     margin-top: 2.5%; 
 }
 
 .caixa4{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
     margin-top: 2.5%;
     margin-bottom: 100px; 
 }
@@ -127,14 +122,6 @@ body{
     width: 350px; 
 }
 
-.dashboard5{
-    background-color: white;
-    height: 320px;
-    width: calc(100% - 60px);
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
 .dashboard6{
     background-color: white;
     margin-left: 30px;
@@ -143,8 +130,15 @@ body{
 }
 
 
+/* grafico que ocupa a tela toda*/
 
-
+.dashboard5{
+    background-color: white;
+    height: 320px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 
 /* gafrico maiores*/
