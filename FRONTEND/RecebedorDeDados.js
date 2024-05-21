@@ -1,4 +1,4 @@
-import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
+/*import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
 import { adicionarTemperatura } from './ComandosBd.js';
 
 const topico = 'Raspberry/Api';
@@ -43,6 +43,65 @@ ClienteMqtt.on('connect', function () {
     }
 });
 
+ClienteMqtt.on('error', function (erro) {
+    console.error('Erro de conexão:', erro);
+});
+*/
+
+import { ClienteMqtt, isConnected } from './ClienteMqtt.js';
+import { adicionarTemperatura } from './ComandosBd.js';
+
+const topico = 'Raspberry/Api';
+
+let ultimaMensagem = '';
+
+// Verificar se a página já foi carregada anteriormente
+if (!localStorage.getItem('paginaCarregada')) {
+    // Executar ação somente se a página não foi carregada anteriormente
+    console.log('Primeiro carregamento da página. Realizar ação.');
+
+    // Subscrever ao tópico
+    ClienteMqtt.subscribe(topico, function (erro) {
+        if (erro) {
+            console.error('Erro ao se inscrever no tópico', erro);
+        } else {
+            console.log('Inscrição no tópico bem-sucedida');
+        }
+    });
+
+    // Callback para mensagens recebidas
+    ClienteMqtt.on('message', function (recebidoDoTopico, mensagem) {
+        console.log('Mensagem recebida no tópico', recebidoDoTopico, ':', mensagem.toString());
+        ultimaMensagem = mensagem.toString();
+        exibirUltimaMensagemNaPagina();
+        adicionarMensagemAoGrafico(mensagem.toString());
+        const chaveTemperatura = adicionarTemperatura(mensagem.toString());
+        console.log("Temperatura adicionada com sucesso. Chave gerada:", chaveTemperatura);
+    });
+
+    // Função para exibir a última mensagem na página
+    function exibirUltimaMensagemNaPagina() {
+        const listaMensagens = document.getElementById('mensagens');
+        listaMensagens.innerHTML = '';
+        const novaMensagem = document.createElement('li');
+        novaMensagem.textContent = ultimaMensagem;
+        listaMensagens.appendChild(novaMensagem);
+    }
+
+    // Marcar a página como carregada no armazenamento local do navegador
+    localStorage.setItem('paginaCarregada', true);
+}
+
+// Evento de conexão ao broker MQTT
+ClienteMqtt.on('connect', function () {
+    console.log('Conectado ao broker MQTT raspberry/api');
+    
+    if (isConnected) {
+        console.log('Conectado ao broker MQTT para recebimento de dados');
+    }
+});
+
+// Evento de erro de conexão
 ClienteMqtt.on('error', function (erro) {
     console.error('Erro de conexão:', erro);
 });
