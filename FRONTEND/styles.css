@@ -127,7 +127,8 @@ body{
 }
 
 #MediasDoAno{
-    height: 320px;
+    height: 100%; /* Ajuste para ocupar a altura total do contêiner pai */
+    width: 100%;
 }
 
 /* gafrico maiores*/
