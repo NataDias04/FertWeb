@@ -138,8 +138,7 @@ body{
 .dashboard2 , .dashboard3 , .dashboard7{
     background-color: white;
     height: 320px;
-    /*width: 1090px;*/
-    width: 60%;
+    width: 1090px;
 }
 
 .dashboard2{
