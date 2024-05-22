@@ -5,6 +5,7 @@ using MQTTnet;
 using MQTTnet.Client;
 using MQTTnet.Client.Options;
 
+
 class EnvioDeDados
 {
 public static async Task InicializarEnvio()
