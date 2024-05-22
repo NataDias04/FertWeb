@@ -6,9 +6,7 @@ class CentralDeComando
     static async Task Main(string[] args)
     {
         //Console.WriteLine("Iniciando envio de dados...");
-        
-        //await EnvioDeDados.InicializarEnvio();
-        
+        //await EnvioDeDados.InicializarEnvio(); 
         //Console.WriteLine("Iniciando recebimento de dados...");
         //await RecebedorDeDados.IniciarRecebimento();
         Console.WriteLine("Iniciando envio e recebimento de dados...");
