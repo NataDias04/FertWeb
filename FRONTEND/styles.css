@@ -138,19 +138,22 @@ body{
 .dashboard2 , .dashboard3 , .dashboard7{
     background-color: white;
     height: 320px;
-    width: 1090px;
+    /*width: 1090px;*/
 }
 
 .dashboard2{
     margin-right: 30px;
+    width: 70%;
 }
 
 .dashboard3{
     margin-left: 30px;
+    /*width: 1090px;*/
 }
 
 .dashboard7{
     margin-right: 30px;
+    /*width: 1090px;*/
 }
 
 
