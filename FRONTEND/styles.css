@@ -1,11 +1,31 @@
-body{
+body {
     background-color: aliceblue;
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6; 
+    font-size: 16px; 
 }
+
+.container-fluid.end {
+    margin-top: auto; /* Empurra o conteúdo final para o final da página */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+p, ul, li {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
 .container-fluid.header {
-    margin-top: 0;
     display: flex;
-    padding:30px 2%;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: cornflowerblue;
     color: aliceblue;
 }
