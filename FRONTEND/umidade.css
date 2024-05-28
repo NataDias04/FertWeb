@@ -110,3 +110,23 @@ body {
     flex: 1 1 calc(50% - 40px);
     max-width: 1900px;
 }
+
+.dashboard4 {
+    background-color: #bce0ff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard4 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: cornflowerblue;
+}
+
+.dashboard4 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: gray;
+}
