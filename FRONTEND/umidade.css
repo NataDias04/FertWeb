@@ -6,6 +6,17 @@ body {
     font-size: 16px; 
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+p, ul, li {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
 .container-fluid.header {
     display: flex;
     justify-content: space-between;
@@ -112,7 +123,9 @@ body {
 }
 
 .dashboard4 {
-    background-color: white; 
+    background-color: #bce0ff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
 }
@@ -127,6 +140,54 @@ body {
     font-size: 16px;
     margin-bottom: 20px;
     color: gray;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-fluid.header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        align-self: flex-end;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .caixa1, .caixa2, .caixa3, .caixa4 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dashboard1, .dashboard4, .dashboard6, .dashboard2, .dashboard3, .dashboard7, .dashboard5 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-fluid.header {
+        padding: 10px;
+    }
+
+    .menu, .logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
 }
 
 .container-fluid.end {
