@@ -122,7 +122,8 @@ p, ul, li {
 }
 
 .dashboard2, .dashboard3, .dashboard7 {
-    flex: 1 1 calc(50% - 40px);
+    flex: 1 1 auto;
+    width: 1900px;
     max-width: 1900px;
 }
 
