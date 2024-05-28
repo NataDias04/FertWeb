@@ -128,3 +128,13 @@ body {
     margin-bottom: 20px;
     color: gray;
 }
+
+.container-fluid.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-size: 14px;
+}
