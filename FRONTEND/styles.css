@@ -47,114 +47,97 @@ body{
     background-color: cornflowerblue;
     border-radius: 20px;
 }
+    /*grafico NPK */
 
 #graficoNutricaoSolo{
     height: 280px;
     width: 280px;  
     margin: 0 auto;
 }
+/* linhas */
 
-.caixa1, .caixa2, .caixa3, .caixa4 {
+.caixa1 , .caixa2 , .caixa3 , .caixa4{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
-
-
-.dashboard1, .dashboard4, .dashboard6 {
-    background-color: white;
-    height: 320px;
-    width: 350px;
+.caixa2 , .caixa3 , .caixa4{
+    margin-top: 2.5%;
+}
+.caixa1 {
+    margin-top: 5%;
+}
+.caixa4{
+    margin-bottom: 5%; 
 }
 
-.dashboard2, .dashboard3, .dashboard7 {
+/* div menores*/
+
+.dashboard1 , .dashboard4, .dashboard6{
+    background-color: white;
+    height: 320px;
+    width: 350px;   
+}
+.dashboard1 {
+    margin-left: 30px;
+    position: relative;
+}
+.dashboard4{
+    
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.dashboard6{
+    margin-left: 30px;
+}
+/* grafico que ocupa a tela toda*/
+
+.dashboard5{
+    background-color: white;
+    height: 320px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#TemperaturaDiaria , #MediasDaSemana{
+    align-items: center;
+    height: calc(100% - 40px);
+    margin-bottom: 20px;
+}
+#MediasDoAno{
+    height: calc(100% - 40px);
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* gafrico maiores*/
+
+.dashboard2 , .dashboard3 , .dashboard7{
     background-color: white;
     height: 320px;
     width: 1090px;
 }
 
-.dashboard5 {
-    background-color: white;
-    height: 320px;
-    width: calc(100% - 60px);
-}
+/* proximo passo resolver a responsividade tentativa de usar o % na largura e adicionar uma margem a esquerda*/
 
-
-.dashboard1 {
-    margin-left: 30px;
-    position: relative;
-}
-
-.dashboard4 {
+.dashboard2{
     margin-right: 30px;
 }
 
-.dashboard6 {
+.dashboard3{
     margin-left: 30px;
 }
-
-.dashboard2 {
+.dashboard7{
     margin-right: 30px;
 }
 
-.dashboard3 {
-    margin-left: 30px;
-}
+/* final do site */
 
-.dashboard7 {
-    margin-right: 30px;
-}
-
-
-@media (max-width: 768px) {
-    .container-fluid.header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu {
-        align-self: flex-end;
-    }
-
-    .logo {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .logo h1 {
-        font-size: 24px;
-    }
-
-    .caixa1, .caixa2, .caixa3, .caixa4 {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .dashboard1, .dashboard2, .dashboard3, .dashboard4, .dashboard5, .dashboard6, .dashboard7 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container-fluid.header {
-        padding: 10px;
-    }
-
-    .menu, .logo {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    .logo h1 {
-        font-size: 20px;
-    }
-
-    .botao-enviar {
-        width: 100%;
-        padding: 15px 0;
-    }
+.container-fluid.end {
+    display: flex;
+    padding:30px 2%;
+    justify-content: space-between;
+    align-items: end;
+    background-color: cornflowerblue;
+    color: aliceblue;
 }
