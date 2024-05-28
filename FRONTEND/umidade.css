@@ -2,8 +2,8 @@ body {
     background-color: aliceblue;
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6; 
-    font-size: 16px; 
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 .container-fluid.end {
@@ -43,36 +43,36 @@ p, ul, li {
 }
 
 .menu {
-        position: relative;
-        display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .menu-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .menu-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .menu-content a:hover {
-        background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 .menu:hover .menu-content {
-        display: block;
+    display: block;
 }
 
 .icone-bars {
-        cursor: pointer;
+    cursor: pointer;
 }
 
 .logo {
@@ -116,7 +116,7 @@ p, ul, li {
 
 /* div menores*/
 
-.dashboard1 , .dashboard4, .dashboard6{
+.dashboard1 , .dashboard4, .dashboard5, .dashboard6{
     background-color: white;
     height: 320px;
     width: 350px;   
@@ -126,7 +126,6 @@ p, ul, li {
     position: relative;
 }
 .dashboard4{
-    
     align-items: center;
     justify-content: center;
     margin-right: 30px;
@@ -134,12 +133,10 @@ p, ul, li {
 .dashboard6{
     margin-left: 30px;
 }
-/* grafico que ocupa a tela toda*/
-
 .dashboard5{
     background-color: white;
     height: 320px;
-    width: calc(100% - 60px);
+    width: 1090px; /* A largura é ajustada para corresponder ao dashboard2 */
     margin-left: 30px;
     margin-right: 30px;
 }
