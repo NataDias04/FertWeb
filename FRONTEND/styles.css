@@ -112,6 +112,10 @@ p, ul, li {
     font-size: 18px;
 }
 
+.dashboard1, .dashboard2, .dashboard3, .dashboard4, .dashboard5, .dashboard6, .dashboard7 {
+    height: 320px;
+}
+
 .dashboard1, .dashboard4, .dashboard6 {
     flex: 1 1 100%;
     max-width: 350px;
