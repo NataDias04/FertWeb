@@ -97,13 +97,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var indiceAtualAno = 0;
 
     // Funções
-
+    var isIndexPage = document.getElementById('mensagens-temperatura') !== null;
+    
     window.adicionarMensagemAoGrafico = function (mensagem) {
-        if (indiceAtual === 0) {
-            graficoTemperaturaDiaria.data.datasets[0].data = Array(24).fill(null);
-            graficoTemperaturaDiaria.update();
+        if (isIndexPage) {
+            if (indiceAtual === 0) {
+                graficoTemperaturaDiaria.data.datasets[0].data = Array(24).fill(null);
+                graficoTemperaturaDiaria.update();
+            }
         }
-
         var dadosAtuais = graficoTemperaturaDiaria.data.datasets[0].data;
         dadosAtuais[indiceAtual] = parseInt(mensagem);
         graficoTemperaturaDiaria.update();
