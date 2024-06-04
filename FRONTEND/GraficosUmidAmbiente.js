@@ -100,25 +100,26 @@ window.adicionarMensagemAoGraficoUmidadeDaSemana = function (media) {
     somaUmidadesDoMes += media;
     indiceAtualSemana = (indiceAtualSemana + 1) % 7;
     listaMedias.push(media);
+    
+    // Verificar se o mês terminou (4 semanas)
+    if ((indiceAtualSemana === 0 && contagemDeSemanas !== 0) || contagemDeSemanas === 4) {
+        var mediaMensal = somaUmidadesDoMes / listaMedias.length;
+        adicionarMensagemAoGraficoUmidadeDoAno(mediaMensal);
+        const { minima, maxima, media } = calcularMinimaMediaMaximaUmidade(listaMedias);
+        const evapo = calcularEvapotranspiracaoHargreaves(minima, maxima, media, 15.0);
+        inserirNoGraficoEvapo(evapo);
+        listaMedias = [];
+        somaUmidadesDoMes = 0;
+        contagemDeSemanas = 0;
+    }
+
+    // Limpar os dados semanais após cada semana completada
     if (indiceAtualSemana === 0) {
-        contagemDeSemanas += 1;
-
-        // Verificando se a contagem de semanas é um múltiplo do número de semanas para o mês
-        if (contagemDeSemanas % semanasParaOMes === 0) {
-            var mediaMensal = somaUmidadesDoMes / semanasParaOMes;
-            adicionarMensagemAoGraficoUmidadeDoAno(mediaMensal);
-            const { minima, maxima, media } = calcularMinimaMediaMaximaUmidade(listaMedias);
-            const evapo = calcularEvapotranspiracaoHargreaves(minima, maxima, media, 15.0);
-            inserirNoGraficoEvapo(evapo);
-            listaMedias = [];
-            somaUmidadesDoMes = 0;
-        }
-
-        // Limpar os dados semanais após cada semana completada
         graficoMediasSemanaUmidade.data.datasets[0].data = Array(7).fill(null);
         graficoMediasSemanaUmidade.update();
     }
 }
+
 
 
 window.adicionarMensagemAoGraficoUmidadeDoAno = function (media) {
