@@ -66,6 +66,11 @@ var graficoMediasAnoUmidade = new Chart(contextoMediasAnoUmidade, {
 
     var indiceAtual = 0;
     var indiceAtualAno = 0;
+    var indiceAtualSemana = 0;
+    var contagemDeSemanas = 0;
+    var somaTemperaturasDoMes = 0;
+    var semanasParaOMes = 1; // Ajuste conforme necessário
+    let listaMedias = []; 
     
     window.adicionarMensagemAoGraficoUmidade = function (mensagem) {
     if (indiceAtual === 0) {
