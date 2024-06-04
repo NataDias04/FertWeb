@@ -6,9 +6,9 @@ body {
     font-size: 16px; 
 }
 
-.container-fluid.end {
+/*.container-fluid.end {
     margin-top: auto; /* Empurra o conteúdo final para o final da página */
-}
+}*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', Arial, sans-serif;
