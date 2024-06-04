@@ -140,7 +140,7 @@ p, ul, li {
 
 /* div menores*/
 
-.dashboard1 , .dashboard4, .dashboard6{
+.dashboard1 , .dashboard4 {
     background-color: white;
     height: 320px;
     width: 350px;   
@@ -155,9 +155,7 @@ p, ul, li {
     justify-content: center;
     margin-right: 30px;
 }
-.dashboard6{
-    margin-left: 30px;
-}
+
 /* grafico que ocupa a tela toda*/
 
 .dashboard5{
@@ -167,19 +165,10 @@ p, ul, li {
     margin-left: 30px;
     margin-right: 30px;
 }
-#TemperaturaDiaria , #MediasDaSemana{
-    align-items: center;
-    height: calc(100% - 40px);
-    margin-bottom: 20px;
-}
-#MediasDoAno{
-    height: calc(100% - 40px);
-    width: 100%;
-    margin-bottom: 20px;
-}
+
 /* gafrico maiores*/
 
-.dashboard2 , .dashboard3 , .dashboard7{
+.dashboard2 , .dashboard3 {
     background-color: white;
     height: 320px;
     width: 1090px;
@@ -193,9 +182,6 @@ p, ul, li {
 
 .dashboard3{
     margin-left: 30px;
-}
-.dashboard7{
-    margin-right: 30px;
 }
 
 /* final do site */
