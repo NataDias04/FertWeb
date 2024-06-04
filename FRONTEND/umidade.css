@@ -5,11 +5,9 @@ body {
     line-height: 1.6; 
     font-size: 16px; 
 }
-
 .container-fluid.end {
     margin-top: auto; /* Empurra o conteúdo final para o final da página */
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0 0 10px 0;
@@ -37,12 +35,10 @@ p, ul, li {
     align-items: center;
     gap: 10px;
 }
-
 .menu {
     position: relative;
     display: inline-block;
 }
-
 .menu-content {
     display: none;
     position: absolute;
@@ -63,11 +59,9 @@ p, ul, li {
 .menu:hover .menu-content {
     display: block;
 }
-
 .icone-bars {
     cursor: pointer;
 }
-
 .logo {
     display: flex;
     flex-direction: column;
@@ -88,28 +82,17 @@ p, ul, li {
     border: 1px solid red;
 }
 
-.caixa1 , .caixa2 , .caixa3{
+.caixa1 , .caixa2 , .caixa3 , .caixa4{
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
-.caixa2 , .caixa3{
+.caixa2 , .caixa3 , .caixa4{
     margin-top: 2.5%;
 }
 .caixa1 {
     margin-top: 5%;
 }
-.caixa3{
+.caixa4{
     margin-bottom: 5%; 
-}
-
-/* final do site */
-
-.container-fluid.end {
-    display: flex;
-    padding:30px 2%;
-    justify-content: space-between;
-    align-items: end;
-    background-color: cornflowerblue;
-    color: aliceblue;
 }
