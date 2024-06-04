@@ -64,6 +64,8 @@ var graficoMediasAnoUmidade = new Chart(contextoMediasAnoUmidade, {
     options: opcoesUmidadeDiaria
 });
 
+    var indiceAtual = 0;
+    
     window.adicionarMensagemAoGraficoUmidade = function (mensagem) {
     if (indiceAtual === 0) {
         graficoUmidadeDiaria.data.datasets[0].data = Array(24).fill(null);
