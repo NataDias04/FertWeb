@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var contagemDeSemanas = 0;
     var somaDasUmidades = 0;
     var somaUmidadesDoMes = 0;
-    var semanasParaOMes = 4; // 4 semanas por mês
+    var semanasParaOMes = 1; // 4 semanas por mês
     let listaMedias = [];
 
     window.adicionarMensagemAoGraficoUmidade = function (mensagem) {
