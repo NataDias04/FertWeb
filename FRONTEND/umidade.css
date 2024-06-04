@@ -97,17 +97,17 @@ p, ul, li {
     border: 1px solid red;
 }
 
-.caixa1 , .caixa2 , .caixa3 , .caixa4{
+.caixa1 , .caixa2 , .caixa3{
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
-.caixa2 , .caixa3 , .caixa4{
+.caixa2 , .caixa3{
     margin-top: 2.5%;
 }
 .caixa1 {
     margin-top: 5%;
 }
-.caixa4{
+.caixa3{
     margin-bottom: 5%; 
 }
