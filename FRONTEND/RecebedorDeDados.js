@@ -71,7 +71,7 @@ ClienteMqtt.on('message', function (recebidoDoTopico, mensagem) {
     const [temperatura, umidade] = ultimaMensagem.split(':');
     exibirTemperaturaNaPagina(temperatura);
     exibirUmidadeNaPagina(umidade);
-    adicionarMensagemAoGrafico(temperatura, umidade);
+    adicionarMensagemAoGrafico(temperatura);
     const chaveTemperatura = adicionarTemperatura(temperatura);
     console.log("Temperatura adicionada com sucesso. Chave gerada:", chaveTemperatura);
 });
