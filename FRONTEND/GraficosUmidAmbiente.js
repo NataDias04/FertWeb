@@ -63,14 +63,19 @@ var graficoMediasAnoUmidade = new Chart(contextoMediasAnoUmidade, {
     data: dadosMediasAnoUmidade,
     options: opcoesUmidadeDiaria
 });
+    var isUmidadePage = document.getElementById('mensagens-umidade') !== null;
 });
 
-window.adicionarMensagemAoGraficoUmidade = function (mensagem) {
-    if (indiceAtual === 0) {
-        graficoUmidadeDiaria.data.datasets[0].data = Array(24).fill(null);
-        graficoUmidadeDiaria.update();
-    }
 
+
+window.adicionarMensagemAoGraficoUmidade = function (mensagem) {
+    if (isUmidadePage){
+        if (indiceAtual === 0) {
+            graficoUmidadeDiaria.data.datasets[0].data = Array(24).fill(null);
+            graficoUmidadeDiaria.update();
+        }
+    }
+    
     var dadosAtuais = graficoUmidadeDiaria.data.datasets[0].data;
     dadosAtuais[indiceAtual] = parseInt(mensagem);
     graficoUmidadeDiaria.update();
