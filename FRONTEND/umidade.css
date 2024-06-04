@@ -111,3 +111,14 @@ p, ul, li {
 .caixa3{
     margin-bottom: 5%; 
 }
+
+/* final do site */
+
+.container-fluid.end {
+    display: flex;
+    padding:30px 2%;
+    justify-content: space-between;
+    align-items: end;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
