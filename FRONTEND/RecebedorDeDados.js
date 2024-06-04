@@ -20,8 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Mensagem recebida no tópico', recebidoDoTopico, ':', mensagem.toString());
         ultimaMensagem = mensagem.toString();
         const [temperatura, umidade] = ultimaMensagem.split(':');
+        
+        if (window.location.pathname === '/index.html') {
         exibirTemperaturaNaPagina(temperatura);
+        }
+        
+        if (window.location.pathname === '/umidade.html') {
         exibirUmidadeNaPagina(umidade);
+        }
         
         if (window.location.pathname === '/index.html') {
         adicionarMensagemAoGrafico(temperatura);
