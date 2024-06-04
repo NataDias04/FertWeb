@@ -23,13 +23,13 @@ body {
     margin: 20px 0;
 }
 
-.caixa1 , .caixa2 , .caixa3 , .caixa4{
+.caixa1 , .caixa2 , .caixa3{
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
 
-.caixa2 , .caixa3 , .caixa4{
+.caixa2 , .caixa3{
     margin-top: 2.5%;
 }
 
@@ -37,13 +37,13 @@ body {
     margin-top: 5%;
 }
 
-.caixa4{
-    margin-bottom: 5%; 
-}
-
-.dashboard2 , .dashboard3 , .dashboard7{
+.dashboard2 , .dashboard3{
     background-color: white;
     height: 320px;
     width: 1090px; 
     padding: 20px;
+}
+
+.dashboard5{
+    margin-bottom: 5%;
 }
