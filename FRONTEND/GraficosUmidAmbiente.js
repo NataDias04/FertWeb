@@ -93,27 +93,32 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.adicionarMensagemAoGraficoUmidadeDaSemana = function (media) {
-        var dadosAtuaisSemana = graficoMediasSemanaUmidade.data.datasets[0].data;
-        dadosAtuaisSemana[indiceAtualSemana] = media;
-        graficoMediasSemanaUmidade.update();
+    var dadosAtuaisSemana = graficoMediasSemanaUmidade.data.datasets[0].data;
+    dadosAtuaisSemana[indiceAtualSemana] = media;
+    graficoMediasSemanaUmidade.update();
 
-        somaUmidadesDoMes += media;
-        indiceAtualSemana = (indiceAtualSemana + 1) % 4; // 4 semanas por mês
-        listaMedias.push(media);
+    somaUmidadesDoMes += media;
+    indiceAtualSemana = (indiceAtualSemana + 1) % 7;
+    listaMedias.push(media);
+    if (indiceAtualSemana === 0) {
+        contagemDeSemanas += 1;
 
-        if ((indiceAtualSemana === 0 && contagemDeSemanas !== 0) || contagemDeSemanas === 4) {
-            var mediaMensal = somaUmidadesDoMes / listaMedias.length;
+        if (contagemDeSemanas === semanasParaOMes) {
+            var totalDoMes = graficoMediasSemanaUmidade.data.datasets[0].data.filter(umid => umid !== null);
+            var mediaMensal = somaUmidadesDoMes / totalDoMes.length;
             adicionarMensagemAoGraficoUmidadeDoAno(mediaMensal);
+            console.log(listaMedias);
             listaMedias = [];
-            somaUmidadesDoMes = 0;
             contagemDeSemanas = 0;
+            somaUmidadesDoMes = 0;
         }
 
-        if (indiceAtualSemana === 0) {
-            graficoMediasSemanaUmidade.data.datasets[0].data = Array(4).fill(null);
-            graficoMediasSemanaUmidade.update();
-        }
+        // Limpar os dados semanais após cada semana completada
+        graficoMediasSemanaUmidade.data.datasets[0].data = Array(7).fill(null);
+        graficoMediasSemanaUmidade.update();
     }
+}
+
 
     window.adicionarMensagemAoGraficoUmidadeDoAno = function (media) {
         var dadosAtuaisDoAno = graficoMediasAnoUmidade.data.datasets[0].data;
