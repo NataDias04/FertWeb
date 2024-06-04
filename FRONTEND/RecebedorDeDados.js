@@ -22,8 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
         const [temperatura, umidade] = ultimaMensagem.split(':');
         exibirTemperaturaNaPagina(temperatura);
         exibirUmidadeNaPagina(umidade);
+        
+        if (window.location.pathname === '/index.html') {
         adicionarMensagemAoGrafico(temperatura);
+        }
+        
+        if (window.location.pathname === '/umidade.html') {
         adicionarMensagemAoGraficoUmidade(umidade);
+        }
         const chaveTemperatura = adicionarTemperatura(temperatura);
         console.log("Temperatura adicionada com sucesso. Chave gerada:", chaveTemperatura);
     });
