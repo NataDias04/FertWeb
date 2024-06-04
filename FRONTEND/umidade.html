@@ -27,46 +27,38 @@
             </div>
         </div>
     </header>
-    <div class="caixa1">
-        <div class="dashboard1">
-            <p class="titulodashboar1"> Umidade </p>
-            <ul class="message-list" id="mensagens-umidade"></ul>
+    <div class="container">
+        <div class="caixa1">
+            <div class="dashboard1">
+                <p class="titulodashboar1">Umidade</p>
+                <ul class="message-list" id="mensagens-umidade"></ul>
+            </div>
+            <div class="dashboard2">
+                Umidades do dia
+            </div>
+        </div>   
+        <div class="caixa2">
+            <div class="dashboard3">
+                Medias de Umidade da semana
+            </div>
+            <div class="dashboard4">
+                Umidade
+            </div>
         </div>
-        
-        <div class="dashboard2">
-            Umidades do dia
-            <!-- Removido o canvas do gráfico -->
-        </div>
-    </div>   
-    <div class="caixa2">
-        <div class="dashboard3">
-            Medias de Umidade da semana
-            <!-- Removido o canvas do gráfico -->
-        </div>
-        
-        <div class="dashboard4">
-            Umidade
-            <!-- Removido o canvas do gráfico -->
+        <div class="caixa3">
+            <div class="dashboard5">
+            </div>  
         </div>
     </div>
-    <div class="caixa3">
-        <div class="dashboard5">
-            <!-- Removido o canvas do gráfico -->
-        </div>  
-    </div>
-    
-    < div  class =" container-fluid end " >
-        conteudo final
+    <div class="container-fluid end">
+        Conteúdo final
     </div>
     <script type="module" src="ConexaoBd.js"></script>
     <script type="module" src="ComandosBd.js"></script> 
-
     <script type="module" src="GraficosTempAmbiente.js"></script>
     <script type="module" src="GraficoNPK.js"></script>
     <script type="module" src="GraficoEvapoTrans.js"></script>
-
     <script type="module" src="ClienteMqtt.js"></script> 
-
     <script type="module" src="EnvioDeDados.js"></script>
     <script type="module" src="RecebedorDeDados.js"></script>
 </body>
