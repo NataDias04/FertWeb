@@ -87,21 +87,11 @@ function exibirTemperaturaNaPagina(temperatura) {
 }
 
 function exibirUmidadeNaPagina(umidade) {
-    fetch('umidade.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(data, 'text/html');
-            const listaUmidade = doc.getElementById('umidades');
-            if (listaUmidade) {
-                listaUmidade.innerHTML = '';
-                const novaUmidade = document.createElement('li');
-                novaUmidade.textContent = `${umidade}%`;
-                listaUmidade.appendChild(novaUmidade);
-                document.body.appendChild(listaUmidade);
-            }
-        })
-        .catch(error => console.error('Erro ao atualizar umidade:', error));
+    const listaMensagens = document.getElementById('mensagens-umidade');
+    listaMensagens.innerHTML = '';
+    const novaMensagem = document.createElement('li');
+    novaMensagem.textContent = `${umidade}%`;
+    listaMensagens.appendChild(novaMensagem);
 }
 
 ClienteMqtt.on('connect', function () {
