@@ -103,18 +103,14 @@ window.adicionarMensagemAoGraficoUmidadeDaSemana = function (media) {
     if (indiceAtualSemana === 0) {
         contagemDeSemanas += 1;
 
-        if (contagemDeSemanas === semanasParaOMes) {
-            var totalDoMes = graficoMediasSemanaUmidade.data.datasets[0].data.filter(umid => umid !== null);
-            var mediaMensal = somaUmidadesDoMes / totalDoMes.length;
+        // Verificando se a contagem de semanas é um múltiplo do número de semanas para o mês
+        if (contagemDeSemanas % semanasParaOMes === 0) {
+            var mediaMensal = somaUmidadesDoMes / semanasParaOMes;
             adicionarMensagemAoGraficoUmidadeDoAno(mediaMensal);
-            console.log(listaMedias);
             const { minima, maxima, media } = calcularMinimaMediaMaximaUmidade(listaMedias);
-            console.log(minima, maxima, media);
             const evapo = calcularEvapotranspiracaoHargreaves(minima, maxima, media, 15.0);
-            console.log(evapo);
             inserirNoGraficoEvapo(evapo);
             listaMedias = [];
-            contagemDeSemanas = 0;
             somaUmidadesDoMes = 0;
         }
 
@@ -123,6 +119,7 @@ window.adicionarMensagemAoGraficoUmidadeDaSemana = function (media) {
         graficoMediasSemanaUmidade.update();
     }
 }
+
 
 window.adicionarMensagemAoGraficoUmidadeDoAno = function (media) {
     var dadosAtuaisDoAno = graficoMediasAnoUmidade.data.datasets[0].data;
