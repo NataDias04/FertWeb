@@ -18,6 +18,8 @@ body {
 }
 
 #UmidadeDiaria {
+    align-items: center;
+    justify-content: center;
     height: calc(100% - 40px);
     width: 100%;
     margin: 20px 0;
