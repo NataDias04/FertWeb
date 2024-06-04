@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var indiceAtualSemana = 0;
     var contagemDeSemanas = 0;
-    var somaTemperaturasDoMes = 0;
+    var somaUmidadesDoMes = 0;
     var semanasParaOMes = 1; // Ajuste conforme necessário
     let listaMedias = []; 
 
