@@ -11,7 +11,7 @@ document.getElementById("botao-enviar").addEventListener("click", function() {
 });
 
 function enviarMensagem() {
-    const mensagem = 'Olá, Raspberry Pi!';
+    const mensagem = 'Ligar o led';
     ClienteMqtt.publish(topico, mensagem, function (erro) {
         if (erro) {
             console.error('Erro ao enviar mensagem:', erro);
