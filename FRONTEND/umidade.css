@@ -40,3 +40,9 @@ body {
 .caixa4{
     margin-bottom: 5%; 
 }
+
+.dashboard2 , .dashboard3 , .dashboard7{
+    background-color: white;
+    height: 320px;
+    width: 1090px; 
+}
