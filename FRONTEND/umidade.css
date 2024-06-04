@@ -59,3 +59,12 @@ p, ul, li {
 .dashboard5{
     margin-bottom: 5%;
 }
+
+.container-fluid.end {
+    display: flex;
+    padding:30px 2%;
+    justify-content: space-between;
+    align-items: end;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
