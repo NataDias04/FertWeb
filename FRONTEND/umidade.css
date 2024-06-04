@@ -118,12 +118,9 @@ p, ul, li {
     width: 1090px; 
     padding: 20px;
 }
+
 .caixa4{
     margin-bottom: 2.5%;
-}
-
-.container-fluid.end {
-    margin-top: auto; /* Empurra o conteúdo final para o final da página */
 }
 
 .container-fluid.end {
