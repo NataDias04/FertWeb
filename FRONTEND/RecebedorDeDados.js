@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         exibirTemperaturaNaPagina(temperatura);
         exibirUmidadeNaPagina(umidade);
         adicionarMensagemAoGrafico(temperatura);
+        adicionarMensagemAoGraficoUmidade(umidade);
         const chaveTemperatura = adicionarTemperatura(temperatura);
         console.log("Temperatura adicionada com sucesso. Chave gerada:", chaveTemperatura);
     });
