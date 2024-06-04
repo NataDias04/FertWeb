@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Configurar gráficos para médias semanais e anuais
     var dadosMediasSemanaUmidade = {
-        labels: ["Semana 1", "Semana 2", "Semana 3", "Semana 4"],
+        labels: ["Seg.", "Ter.", "Qua.", "Qui.", "Sex.", "Sab.", "Dom."],
         datasets: [{
             label: "Média Semanal de Umidade",
             backgroundColor: "rgba(54, 162, 235, 0.2)",
