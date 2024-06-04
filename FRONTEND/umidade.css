@@ -17,10 +17,10 @@ body {
     border: 1px solid red;
 }
 
-#UmidadeDiaria{
-    align-items: center;
+#UmidadeDiaria {
     height: calc(100% - 40px);
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .caixa1 , .caixa2 , .caixa3 , .caixa4{
