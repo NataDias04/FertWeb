@@ -22,7 +22,7 @@ body {
     color: aliceblue;
 }
 .logo{
- display: flex;   
+ display: flexbox;   
 }
 
 .icone-bars {
