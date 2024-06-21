@@ -162,6 +162,7 @@ body {
 .container-fluid end{
     background-color: cornflowerblue;
     height: 100px;
+    
 }
 
 @media (max-width: 768px) {
