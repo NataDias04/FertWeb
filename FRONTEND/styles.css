@@ -92,7 +92,8 @@ body {
 }
 
 .dashboard1, .dashboard4, .dashboard6 {
-    max-width: 350px;
+    height: 320px;
+    width: 320px;
     flex: 1 1 100%;   
 }
 
@@ -102,7 +103,7 @@ body {
 }
 
 #TemperaturaDiaria, #MediasDaSemana, #MediasDoAno, #graficoNutricaoSolo, #EvapoTranspiracao {
-    max-height: 320px;
+    height: 320px;
     height: 100%;
     width: 100%; 
 }
