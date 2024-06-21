@@ -21,42 +21,46 @@
             </div>
         </div>
         <div class="logo">
-            <h1>fert web</h1>
+            <h1>Fert Web</h1>
             <div>
                 <i class="fa-solid fa-leaf"></i>
             </div>
         </div>
     </header>
-    <div class="caixa1">
-        <div class="dashboard1">
-            <p class="titulodashboar1"> Umidade </p>
-            <ul class="message-list" id="mensagens-umidade"></ul>
+    
+    <div class="container">
+        <div class="row caixa1">
+            <div class="col-md-4 dashboard1">
+                <p class="titulodashboar1">Umidade</p>
+                <ul class="message-list" id="mensagens-umidade"></ul>
+            </div>
+            <div class="col-md-8 dashboard2">
+                <b>UMIDADES DO DIA:</b>
+                <canvas id="UmidadeDiaria"></canvas>
+            </div>
         </div>
         
-        <div class="dashboard2">
-            Umidades do dia
-            <canvas id="UmidadeDiaria" width="1000" height="265"></canvas>
-        </div>
-    </div>   
-    <div class="caixa2">
-        <div class="dashboard3">
-            Medias de Umidade da semana
-            <canvas id="MediasSemanaUmidade" width="1000" height="265"></canvas>
+        <div class="row caixa2">
+            <div class="col-md-8 dashboard3">
+                <b>MÉDIAS DE UMIDADE DA SEMANA:</b>
+                <canvas id="MediasSemanaUmidade"></canvas>
+            </div>
+            <div class="col-md-4 dashboard4">
+                <b>Umidade Atual:</b>
+                <!-- Seu conteúdo aqui -->
+            </div>
         </div>
         
-        <div class="dashboard4">
-            Umidade
-            <!-- Removido o canvas do gráfico -->
+        <div class="row caixa3">
+            <div class="col-12 dashboard5">
+                <b>MÉDIAS DE UMIDADE DO ANO:</b>
+                <canvas id="MediasAnoUmidade"></canvas>
+            </div>
         </div>
-    </div>
-    <div class="caixa3">
-        <div class="dashboard5">
-            <canvas id="MediasAnoUmidade" width="1000" height="265"></canvas>
-        </div>  
     </div>
 
     <div class="container-fluid end">
-        conteudo final
+        Conteúdo Final
     </div>
 
     <script type="module" src="ConexaoBd.js"></script>
