@@ -3,7 +3,6 @@ body {
     line-height: 1.6; 
     margin: 0;
 }
-
 .container-fluid.header {
     background-color: cornflowerblue;
     justify-content: space-between;
@@ -13,13 +12,11 @@ body {
     padding: 20px;
     height: 100px;
 }
-
 .icone-bars {
     color: aliceblue;
     font-size: 24px;
     cursor: pointer;
 }
-
 .menu {
     position: relative;
     display: inline-block;
@@ -27,7 +24,6 @@ body {
     align-items: center;
     gap: 10px;
 }
-
 .menu-content {
     display: none;
     position: absolute;
@@ -36,45 +32,37 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .menu-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
 .menu-content a:hover {
     background-color: #f1f1f1;
 }
-
 .menu:hover .menu-content {
     display: block;
 }
-
 .icone-bars {
     cursor: pointer;
 }
-
 .logo {
     align-items: center;
     text-align: center;
     display: flex;
 }
-
 .logo h1 {
     font-weight: 700;
     font-size: 28px;
     margin: 0;
 }
-
 .container {
     max-width: 1900px;
     padding-top: 1px;
     margin: 0 auto;
     padding: 20px; 
 }
-
 .caixa1, .caixa2, .caixa3, .caixa4 {
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -82,7 +70,6 @@ body {
     display: flex;  
     gap: 20px;
 }
-
 .dashboard1, .dashboard4, .dashboard6, .dashboard2, .dashboard3, .dashboard7, .dashboard5 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -90,24 +77,19 @@ body {
     position: relative;
     padding: 20px;
 }
-
 .dashboard1, .dashboard4, .dashboard6 {
-    height: 320px;
-    width: 320px;
+    max-width: 350px;
     flex: 1 1 100%;   
 }
-
 .dashboard2, .dashboard3, .dashboard7 {
     flex: 1 1 calc(50% - 40px);
     max-width: 1900px;
 }
-
 #TemperaturaDiaria, #MediasDaSemana, #MediasDoAno, #graficoNutricaoSolo, #EvapoTranspiracao {
-    height: 320px;
+    max-height: 320px;
     height: 100%;
     width: 100%; 
 }
-
 .botao-enviar {
     transition: background-color 0.3s ease, transform 0.3s ease;
     background-color: cornflowerblue;
@@ -123,7 +105,6 @@ body {
     border: none;
     gap: 10px; 
 }
-
 .dashboard4 {
     background-color: #bce0ff; 
     border: 1px solid #e0e0e0; 
@@ -135,45 +116,37 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .dashboard4 h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: cornflowerblue;
 }
-
 .dashboard4 p {
     font-size: 16px;
     margin-bottom: 20px;
     color: rgb(128, 128, 128);
 }
-
 .botao-enviar i {
     font-size: 18px;
 }
-
 .botao-enviar:hover {
     background-color: darkblue;
     transform: scale(1.1);
 }
-
 @keyframes button-animate {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
-
 .botao-enviar:active {
     animation: button-animate 0.2s;
 }
-
 .feedback {
     font-size: 14px;
     margin-top: 10px;
     display: none;
    
 }
-
 .dashboard6 {
     background-color: white;
     padding: 20px;
@@ -182,11 +155,9 @@ body {
     margin-bottom: 20px;
     text-align: center; /* Centraliza o texto */
 }
-
 .dashboard6 b {
     font-size: 18px;
 }
-
 #graficoNutricaoSolo {
     margin: 0 auto;
     max-width: 100%;
@@ -194,9 +165,7 @@ body {
 .container-fluid end{
     height: 100px;
 }
-
 /* Responsividade */
-
 @media (max-width: 768px) {
     .container-fluid.header {
         flex-direction: column;
@@ -223,7 +192,6 @@ body {
         max-width: 100%;
     }
 }
-
 @media (max-width: 480px) {
     .container-fluid.header {
         padding: 10px;
@@ -241,7 +209,6 @@ body {
         padding: 15px 0;
     }
 }
-
 .container-fluid.end {
     display: flex;
     justify-content: space-between;
@@ -251,23 +218,19 @@ body {
     color: aliceblue;
     font-size: 14px;
 }
-
 .container-custom {
     padding: 20px;
     background-color: cornflowerblue;
     color: aliceblue;
     width: 100%;
 }
-
 #TemperaturaDiaria , #MediasDaSemana{
     align-items: center;
     height: calc(100% - 40px);
     margin-bottom: 20px;
 }
-
 #MediasDoAno {
     height: calc(100% - 40px);
     width: 100%;
     margin-bottom: 20px;
 }
-
