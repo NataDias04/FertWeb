@@ -21,6 +21,9 @@ body {
     background-color: cornflowerblue;
     color: aliceblue;
 }
+.logo{
+ display: flex;   
+}
 
 .icone-bars {
     color: aliceblue;
