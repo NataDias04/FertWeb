@@ -9,8 +9,8 @@ body {
 .container {
     padding: 20px;
     padding-top: 1px;
-    margin: 0 auto; /* Centraliza o container na página */
-    max-width: 1900px; /* Define a largura máxima do container */
+    margin: 0 auto;
+    max-width: 1900px;
 }
 
 .container-fluid.header {
@@ -99,16 +99,6 @@ body {
     margin-bottom: 20px;
 }
 
-.dashboard1 p,
-.dashboard2 b,
-.dashboard3 b,
-.dashboard4,
-.dashboard5 b,
-.dashboard6 b,
-.dashboard7 b {
-    font-size: 18px;
-}
-
 .dashboard1, .dashboard4, .dashboard6 {
     flex: 1 1 100%;
     max-width: 350px;
@@ -149,8 +139,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 .dashboard4 h2 {
@@ -205,8 +195,8 @@ body {
 }
 
 #graficoNutricaoSolo {
-    margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 100%; /* Ajusta o gráfico para ocupar o máximo de largura possível */
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 /* Responsividade */
@@ -270,7 +260,7 @@ body {
     padding: 20px;
     background-color: cornflowerblue;
     color: aliceblue;
-    width: 100%; /* Ocupa 100% da largura disponível */
+    width: 100%;
 }
 
 #TemperaturaDiaria , #MediasDaSemana{
