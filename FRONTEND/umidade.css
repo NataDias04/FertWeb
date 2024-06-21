@@ -116,12 +116,14 @@ body {
 }
 
 .dashboard1, .dashboard4 {
+    max-width: 350px;
+    flex: 1 1 100%; 
     background-color: white;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-bottom: 20px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
     flex: 1;
 }
 
