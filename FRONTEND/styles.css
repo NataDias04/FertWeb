@@ -13,6 +13,7 @@ body {
     color: aliceblue;
     display: flex;
     padding: 20px;
+    height: 30px;
 }
 
 .icone-bars {
@@ -190,6 +191,10 @@ body {
 #graficoNutricaoSolo {
     margin: 0 auto;
     max-width: 100%;
+}
+
+.container-fluid end{
+    height: 30px;
 }
 
 /* Responsividade */
