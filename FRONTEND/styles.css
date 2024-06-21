@@ -5,7 +5,7 @@ body {
 }
 .container-fluid.header {
     background-color: cornflowerblue;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: aliceblue;
     display: flex;
@@ -48,7 +48,6 @@ body {
     cursor: pointer;
 }
 .logo {
-    justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
