@@ -102,6 +102,17 @@ body {
     height: 100%;
     width: 100%; 
 }
+
+.message-list {
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+}
+
 .botao-enviar {
     transition: background-color 0.3s ease, transform 0.3s ease;
     background-color: cornflowerblue;
