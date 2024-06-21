@@ -1,46 +1,17 @@
 body {
     background-color: aliceblue;
+    line-height: 1.6; 
     margin: 0;
-    font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-.container {
-    padding: 0 20px; /* Ajuste de padding para evitar espaçamento extra */
-    margin: 0 auto; /* Centraliza o container na página */
-    max-width: 1900px; /* Define a largura máxima do container */
-}
-
-.container-fluid.end {
-    margin-top: auto; /* Empurra o conteúdo final para o final da página */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: cornflowerblue;
-    color: aliceblue;
-    font-size: 14px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Arial, sans-serif;
-    margin: 0 0 10px 0;
-    line-height: 1.2;
-}
-
-p, ul, li {
-    margin: 0 0 10px 0;
-    line-height: 1.6;
 }
 
 .container-fluid.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
     background-color: cornflowerblue;
+    align-items: center;
     color: aliceblue;
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    padding: 20px;
+    height: 100px;
 }
 
 .icone-bars {
@@ -50,10 +21,10 @@ p, ul, li {
 }
 
 .menu {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
-    position: relative; /* Adicionado para posicionar o submenu corretamente */
 }
 
 .menu-content {
@@ -61,7 +32,7 @@ p, ul, li {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -80,26 +51,34 @@ p, ul, li {
     display: block;
 }
 
+.icone-bars {
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    flex: 1;
-    text-align: center;
+    justify-content: center; /* Centraliza a logo horizontalmente */
+    flex-grow: 1; /* Permite que a logo ocupe espaço suficiente para centralizar */
 }
 
 .logo h1 {
-    margin: 0;
-    font-size: 28px;
     font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+    text-align: center; /* Garante que o texto esteja centralizado no elemento */
+}
+
+.container {
+    max-width: 1900px;
+    padding-top: 1px;
+    margin: 0 auto;
+    padding: 20px; 
 }
 
 .titulodashboar1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid red; /* Apenas para debug, pode ser removido */
 }
 
 .message-list {
@@ -110,7 +89,6 @@ p, ul, li {
     transform: translate(-50%, -50%);
     padding: 0;
     margin: 0;
-    border: 1px solid red; /* Apenas para debug, pode ser removido */
 }
 
 .botao-enviar {
