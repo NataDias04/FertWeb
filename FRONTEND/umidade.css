@@ -159,6 +159,11 @@ body {
     max-height: 320px;
 }
 
+.container-fluid end{
+    background-color: cornflowerblue;
+    height: 100px;
+}
+
 @media (max-width: 768px) {
     .container-fluid.header {
         flex-direction: column;
