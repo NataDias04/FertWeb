@@ -13,7 +13,7 @@ body {
     color: aliceblue;
     display: flex;
     padding: 20px;
-    height: 30px;
+    height: 200px;
 }
 
 .icone-bars {
@@ -192,7 +192,6 @@ body {
     margin: 0 auto;
     max-width: 100%;
 }
-
 .container-fluid end{
     height: 30px;
 }
