@@ -185,7 +185,7 @@ body {
     margin: 0 auto;
     max-width: 100%;
 }
-.container-fluid end{
+.container-fluid.end{
     height: 100px;
 }
 /* Responsividade */
