@@ -159,7 +159,7 @@ body {
     max-height: 320px;
 }
 
-.container-fluid end{
+.container-fluid.end{
     background-color: cornflowerblue;
     height: 100px;
     
