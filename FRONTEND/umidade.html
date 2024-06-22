@@ -31,7 +31,7 @@
     <div class="container">
         <div class="row caixa1">
             <div class="col-md-4 dashboard1">
-                <p class="titulodashboar1">Umidade</p>
+                <p class="titulodashboar1"><b>UMIDADE ATUAL:</b></p>
                 <ul class="message-list" id="mensagens-umidade"></ul>
             </div>
             <div class="col-md-8 dashboard2">
@@ -46,8 +46,12 @@
                 <canvas id="MediasSemanaUmidade"></canvas>
             </div>
             <div class="col-md-4 dashboard4">
-                <b>Umidade Atual:</b>
-                <!-- Seu conteúdo aqui -->
+                <h2>Enviar Comando</h2>
+                <p>Clique no botão abaixo para enviar um comando ao sistema.</p>
+                <button id="botao-enviar" class="botao-enviar">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar Comando
+                </button>
+                <p id="feedback" class="feedback"></p>
             </div>
         </div>
         
@@ -60,6 +64,7 @@
     </div>
 
     <div class="container-fluid end">
+        Conteúdo Final
     </div>
 
     <script type="module" src="ConexaoBd.js"></script>
@@ -68,5 +73,16 @@
     <script type="module" src="ClienteMqtt.js"></script> 
     <script type="module" src="EnvioDeDados.js"></script>
     <script type="module" src="RecebedorDeDados.js"></script>
+    <script>
+        document.getElementById('botao-enviar').addEventListener('click', function() {
+            var feedback = document.getElementById('feedback');
+            feedback.textContent = 'Comando enviado com sucesso!';
+            feedback.style.display = 'block';
+            setTimeout(function() {
+                feedback.style.display = 'none';
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
+
