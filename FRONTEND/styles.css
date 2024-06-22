@@ -88,6 +88,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     padding: 20px;
+    text-align: center;
 }
 .dashboard1, .dashboard4, .dashboard6 {
     max-width: 350px;
@@ -188,6 +189,15 @@ body {
 .container-fluid.end{
     height: 100px;
 }
+
+.dashboard1 p,
+.dashboard2 b,
+.dashboard3 b,
+.dashboard5 b,
+.dashboard7 b {
+    text-align: center;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .container-fluid.header {
