@@ -92,19 +92,39 @@ body {
 }
 
 .botao-enviar {
-    cursor: pointer;
-    text-align: center;
-    color: white;
-    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     background-color: cornflowerblue;
     border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    color: white;
+    border: none;
+    gap: 10px; 
+}
+.botao-enviar i {
+    font-size: 18px;
+}
+.botao-enviar:hover {
+    background-color: darkblue;
+    transform: scale(1.1);
+}
+@keyframes button-animate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.botao-enviar:active {
+    animation: button-animate 0.2s;
+}
+.feedback {
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
 }
 
 .caixa1, .caixa2, .caixa3 {
@@ -118,13 +138,34 @@ body {
 .dashboard1, .dashboard4 {
     max-width: 350px;
     flex: 1 1 100%; 
-    background-color: white;
+    background-color: #bce0ff;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-bottom: 20px;
     text-align: center;
     flex: 1;
+}
+.dashboard4 {
+    background-color: #bce0ff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard4 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: cornflowerblue;
+}
+.dashboard4 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: rgb(128, 128, 128);
 }
 
 .dashboard5 {
@@ -214,8 +255,13 @@ body {
     }
 }
 
-.dashboard1, .dashboard2, .dashboard3, .dashboard4, .dashboard5 {
+.dashboard1, .dashboard2, .dashboard3, .dashboard5 {
     background-color: white;
+    width: 100%;
+}
+
+.dashboard4 {
+    background-color: #bce0ff; 
     width: 100%;
 }
 
